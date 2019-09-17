@@ -119,22 +119,17 @@
         /* NAV 導覽列 */
 
         /* Banner */
+        .pt-80{
+            padding-top: 80px;
+        }
         .h-banner {
             height: calc(100vh - 80px);
         }
 
-        /* .carousel-control-next-icon,
-        .carousel-control-prev-icon {
-            width: 35px;
-            height: 55px;
-        } */
-
-
-        .swiper-container {
-            width: 100vw;
-            height: 100vh;
+        .swiper-img {
+            background-size: cover;
+            background-position: center;
         }
-
 
         /* 初次相遇 */
         /* 一探方隅 */
@@ -177,15 +172,15 @@
         }
 
 
-        .swiper-container {
+        /* .swiper-container {
             width: 100%;
-            height: 400px;
+            height: 100%;
         }
 
         .swiper-slide {
             background-position: center;
             background-size: cover;
-        }
+        } */
 
         /* 佳評如潮 */
 
@@ -202,7 +197,8 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container d-flex align-items-end">
             <a class="navbar-brand" href="#banner">
-                <img src="./img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle" alt="木門咖啡">
+                <img src="./img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle"
+                    alt="木門咖啡">
                 <!-- logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54 -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
@@ -233,19 +229,13 @@
     </nav>
 
     <!-- Banner -->
-    <section id="banner" class="">
+    <section id="banner" class="pt-80">
         <!-- Swiper -->
-        <div class="swiper-container h-banner">
+        <div class="swiper-container w-100 h-banner">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./img/banner/banner-1.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/banner/banner-2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./img/banner/banner-3.jpg" alt="" class="img-fluid">
-                </div>
+                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);"></div>
+                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-2.jpg);"></div>
+                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-3.jpg);"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -332,7 +322,7 @@
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>踏進悠閑舒適的一隅</h5>
             </div>
-            <!-- 一探方隅的輪播 -->
+            <!-- 一探方隅的輪播 -->            <!-- 改swiper，不要用bootstrap的 -->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -358,13 +348,13 @@
             <div class="row">
                 <div class="col-gold-lg ">
                     <div class="rowb ">
-                        <div class="col d-sm-flex d-none">
-                            <img src="../img/七彩木門-天花板.jpg" alt="" class="img-fluid">
-                            <p class="d-flex justify-content-end">2017商業空間類餐飲空間TID獎</p>
+                        <div class="col d-sm-flex d-none" >
+                            <img src="./img/space/space1_3.jpg" alt="" class="img-fluid">
+                            <!-- <p class="d-flex justify-content-end">2017商業空間類餐飲空間TID獎</p> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-gold-sm  px-xl-1">
+                <div class="col-gold-sm  px-xl-5 py-xl-5">
                     <h2>空間設計概念</h2>
                     <h4>以「自然」「舒適」為主軸，運用切割天窗引入光線，減少人工照明的同時，落實環保節能的永續精神，而空間產生無限延伸的奇幻感受，側牆富含生命力的植生牆面讓植栽在溫煦的陽光下，充分進行光合作用，人與植物即便在室內也能享受日光帶來的溫暖，藉此形塑木門咖啡的風格意象。
                     </h4>

@@ -15,10 +15,7 @@
             succText: 'ok!',
             textColor: '#000',
             succTextColor: '#000',
-            successFunc: function() {
-                alert('successfully unlock!');
-            }
-        };
+            };
         this.options = $.extend({}, this.default, options);
         this.isSuccess = false;
     }

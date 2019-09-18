@@ -15,7 +15,7 @@
         integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
     <!-- 插入解鎖文件 -->
     <link rel="stylesheet" type="text/css" href="unlock.css">
@@ -49,6 +49,15 @@
             width: 38.2%;
         }
 
+        .px-15{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .px-30{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
         @media (max-width: 576px) {
 
 
@@ -65,6 +74,11 @@
         .slash {
             border-top: none;
             border-bottom: none;
+        }
+
+        .swiper-img {
+            background-size: cover;
+            background-position: center;
         }
 
 
@@ -127,10 +141,7 @@
             height: calc(100vh - 80px);
         }
 
-        .swiper-img {
-            background-size: cover;
-            background-position: center;
-        }
+
 
         /* 初次相遇 */
         /* 一探方隅 */
@@ -291,7 +302,7 @@
     <section id="about" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 pl-2 slash ">初次相遇</h2>
+                <h2 class="pr-3 slash ">初次相遇</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>冉冉陽光指引我們相遇</h5>
             </div>
@@ -314,8 +325,10 @@
                 </div>
             </div>
             <div class="row ">
-                <div class="col d-flex justify-content-center">
-                    <h3>我們用心經營、努力創造，只為了呈現最好的給大家</h3>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <h5 class="d-sm-block d-none pr-3"> ● </h5>
+                    <h3> 我們用心經營、努力創造，只為了呈現最好的給大家 </h3>
+                    <h5 class="d-sm-block d-none pl-3"> ● </h5>
                 </div>
             </div>
         </div>
@@ -325,7 +338,7 @@
     <section id="space" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 pl-2 slash ">一探方隅</h2>
+                <h2 class="pr-3 slash ">一探方隅</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>踏進悠閑舒適的一隅</h5>
             </div>
@@ -333,31 +346,27 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper w-100 h-space">
-                    <div class="swiper-slide" style="background-image: url(./img/banner/banner-1.jpg);">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);">
+                    </div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-2.jpg);">
+                    </div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);">
+                    </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
             <!-- 一探方隅的空間設計概念 -->
             <div class="row pt-5">
-                <div class="col-gold-lg">
-                    <div class="row">
+                <div class="col-gold-lg px-30">
+                    <div class="row w-100">
                         <div class="col d-sm-flex justify-content-end align-items-end d-none w-100 swiper-img"
                             style="height: 430px; background-image: url(./img/space/space1_3.jpg);">
                             <div class="TID">2017商業空間類餐飲空間TID獎</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-gold-sm  px-xl-5 py-xl-5">
+                <div class="col-gold-sm px-30  px-xl-5 py-xl-5">
                     <h2>空間設計概念</h2>
                     <h4>以「自然」「舒適」為主軸，運用切割天窗引入光線，減少人工照明的同時，落實環保節能的永續精神，而空間產生無限延伸的奇幻感受，側牆富含生命力的植生牆面讓植栽在溫煦的陽光下，充分進行光合作用，人與植物即便在室內也能享受日光帶來的溫暖，藉此形塑木門咖啡的風格意象。
                     </h4>
@@ -370,11 +379,12 @@
     <section id="food" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 pl-2 slash ">淺嘗美味</h2>
+                <h2 class="pr-3 slash ">淺嘗美味</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>品味手作的簡單嘗新</h5>
             </div>
-            <div class="row px-3">
+            <!-- 6格-hover-food -->
+            <!-- <div class="row px-3">
                 <div class="col-xl-4 col-6">
                     <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
                         alt="" class="img-fluid border border-dark">
@@ -417,14 +427,15 @@
                         <p>甜點</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- swiper-food -->
-            <div class="row">
+            <div class="row px-15">
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -433,8 +444,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -443,8 +454,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -453,8 +464,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -463,8 +474,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -473,8 +484,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -488,7 +499,7 @@
     <section id="comment" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 pl-2 slash ">佳評如潮</h2>
+                <h2 class="pr-3 slash ">佳評如潮</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>匯集好評的迸流</h5>
             </div>
@@ -537,12 +548,12 @@
     <section id="contact" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 pl-2 slash ">線上聯繫</h2>
+                <h2 class="pr-3 slash ">線上聯繫</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>搭起一個互動橋樑</h5>
             </div>
             <div class="row">
-                <div class="col-gold-lg">
+                <div class="col-gold-lg px-15">
                     <form>
                         <div class="form-row justify-content-between">
                             <div class="form-group col-md-4">
@@ -624,7 +635,7 @@
                                     alt=""></small></p>
                     </div>
                 </div>
-                <div class="col-gold-sm px-xl-5">
+                <div class="col-gold-sm px-15 px-xl-5">
                     <div class="text">
                         <h3>
                             <i class="fab fa-facebook-square"></i>
@@ -658,7 +669,7 @@
                 <h2>交通資訊</h2>
             </div>
             <div class="row">
-                <div class="col-gold-lg pr-xl-5">
+                <div class="col-gold-lg px-15 pr-xl-5">
                     <div class="text_title packing">鄰近停車場</div>
 
                     <div class="form-row">
@@ -700,7 +711,7 @@
                     </div>
 
                 </div>
-                <div class="col-gold-sm px-xl-5">
+                <div class="col-gold-sm px-15 px-xl-5">
                     <div class="text_title packing">搭乘公車</div>
                     <div class="packing">
                         東興大墩十二街口<br>70.70B.127
@@ -759,7 +770,7 @@
 
 
     <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- Swiper-banner -->
     <script>
         var swiper = new Swiper('section#banner .swiper-container', {
@@ -792,7 +803,7 @@
     <script>
         var swiper = new Swiper('section#food .swiper-container', {
             // 自動撥放
-            speed: 1500,
+            speed: 2000,
             autoplay: {
                 stopOnLastSlide: false,
                 disableOnInteraction: true,

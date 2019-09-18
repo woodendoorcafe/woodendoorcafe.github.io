@@ -451,10 +451,10 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)">
+                            <div class="swiper-slide nameA " style="background-image:url(./img/comment/comment-4.jpg)">
                                
                             </div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)">
+                            <div class="swiper-slide nameA" style="background-image:url(./img/comment/comment-3.jpg)">
                                
                             </div>
 
@@ -468,9 +468,9 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)">
+                            <div class="swiper-slide nameB" style="background-image:url(./img/comment/comment-4.jpg)">
                            </div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide nameB" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -479,8 +479,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide nameC" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide nameC" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -489,8 +489,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide nameD" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide nameD" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -499,8 +499,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide nameE" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide nameE" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -509,8 +509,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide nameF" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide nameF" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -573,7 +573,7 @@
             <!-- 手機版 是 swiper -->
             <div class="swiper-container d-sm-flex d-block">
                 <div class="swiper-wrapper px-sm-5">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide name">
                         <div class="w-100">
                             <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
                             <div class="card-body bg-warning">
@@ -894,13 +894,12 @@
             },
         });
 
-        $("#food .swiper-slide").hover(
+        $("#food .swiper-slide.nameA").hover(
         function () {
-                $(this).append($("<span> ***</span>"));
+                $(this).append($("<span>特調</span>"));
             },function () {
                  $(this).find("span").last().remove();
             }
-        
         );
 
 

@@ -169,6 +169,8 @@
             padding-left: 0;
         }
 
+        
+
         .food:hover {
             display: flex;
             justify-content: center;
@@ -205,7 +207,17 @@
             background-position: center;
             background-size: cover;
         }
-
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 32pt;
+            font-family: '微軟正黑體';
+            font-weight: bold;
+            background-color: #5a270b62;
+        line-height: 400px;
+        }
         /* 佳評如潮 */
 
         /* 線上聯繫 */
@@ -439,21 +451,25 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)">
+                               
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)">
+                               
+                            </div>
 
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div class="food card-img-overlay rgba-light">
-                        <p>特調</p>
-                    </div>
+
+
                 </div>
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)">
+                           </div>
                             <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
@@ -771,7 +787,7 @@
                 </div>
             </div>
     </section>
-
+    
     <!-- Footer -->
     <footer class="bg-light">
         <div class="container">
@@ -801,7 +817,7 @@
                 </div>
             </div>
         </div>
-
+        
     </footer>
 
 
@@ -878,9 +894,15 @@
             },
         });
 
-        mySwiper.el.onmouseover = function () {
-            mySwiper.autoplay.stop();
-        };
+        $("#food .swiper-slide").hover(
+        function () {
+                $(this).append($("<span> ***</span>"));
+            },function () {
+                 $(this).find("span").last().remove();
+            }
+        
+        );
+
 
     </script>
 
@@ -894,6 +916,8 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+
     </script>
 
     <!-- 瀑布流 masonry.js -->

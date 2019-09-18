@@ -446,6 +446,9 @@
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>
+                    <div class="food card-img-overlay rgba-light">
+                        <p>特調</p>
+                    </div>
                 </div>
                 <div class="col-xl-4">
                     <div class="swiper-container">
@@ -504,12 +507,15 @@
     <!-- 佳評如潮 -->
     <section id="comment" class="pt-96">
         <div class="container">
+
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
                 <h2 class="pr-3 slash ">佳評如潮</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>匯集好評的迸流</h5>
             </div>
-            <div class="row masonry">
+
+            <!-- 電腦版 是 masonry -->
+            <div class="row masonry d-sm-block d-none">
                 <div class="col-12 col-xl-4 col-md-6 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
@@ -546,6 +552,40 @@
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
+            </div>
+
+            <!-- 手機版 是 swiper -->
+            <div class="swiper-container d-sm-flex d-block">
+                <div class="swiper-wrapper px-sm-5">
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+                            <div class="card-body bg-warning">
+                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+                            <div class="card-body bg-warning">
+                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-100">
+                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+                            <div class="card-body bg-warning">
+                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -736,26 +776,28 @@
     <footer class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <img src="" alt="fb">
+                <div class="col-md-3">
+                    <i class="fab fa-facebook-square"></i>
                     木門咖啡<br>
-                    <img src="" alt="place">
+                    <i class="fas fa-map-marker-alt"></i>
                     台中市南屯區大墩十二街126號
                 </div>
                 <div class="col-md-3">
-                    <img src="" alt="phone">
+                    <i class="fas fa-phone-alt"></i>
                     04-23298877<br>
-                    <img src="" alt="time">
+                    <i class="fas fa-clock"></i>
                     9:00 - 21:00
                 </div>
             </div>
-            <div class="row justify-content-between">
+            <div class="row py-2 justify-content-between align-items-end">
                 <div class="col-md-5">
                     讓我們一起享受陽光，擁有舒適寧靜的慢活步調
                 </div>
-                <div class="col-md-4">
-                    本網站僅作教學用，如有侵權請告知<br>
-                    Copyright © 2019 木門咖啡 ALL RIGHT RESERVED
+                <div class="col-md-5">
+                    <small>
+                        本網站僅作教學用，如有侵權請告知<br>
+                        Copyright © 2019 木門咖啡 ALL RIGHT RESERVED
+                    </small>
                 </div>
             </div>
         </div>
@@ -810,7 +852,8 @@
 
     <!-- swiper-food -->
     <script>
-        var swiper = new Swiper('section#food .swiper-container', {
+        var myswiper = new Swiper('section#food .swiper-container', {
+
             // 自動撥放
             speed: 2000,
             autoplay: {
@@ -819,6 +862,7 @@
             },
             // 可以一直輪迴
             loop: true,
+
             // 立方體輪播效果
             effect: 'cube',
             grabCursor: true,
@@ -833,8 +877,24 @@
                 // el: '.swiper-pagination',
             },
         });
+
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        };
+
     </script>
 
+    <!-- swiper-comment -->
+    <script>
+        var swiper = new Swiper('section#comment .swiper-container', {
+            loop: true,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
     <!-- 瀑布流 masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

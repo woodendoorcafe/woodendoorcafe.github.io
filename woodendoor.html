@@ -15,7 +15,7 @@
         integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
     <!-- 插入解鎖文件 -->
     <link rel="stylesheet" type="text/css" href="unlock.css">
@@ -65,6 +65,11 @@
         .slash {
             border-top: none;
             border-bottom: none;
+        }
+
+        .swiper-img {
+            background-size: cover;
+            background-position: center;
         }
 
 
@@ -127,10 +132,7 @@
             height: calc(100vh - 80px);
         }
 
-        .swiper-img {
-            background-size: cover;
-            background-position: center;
-        }
+        
 
         /* 初次相遇 */
         /* 一探方隅 */
@@ -333,16 +335,9 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper w-100 h-space">
-                    <div class="swiper-slide" style="background-image: url(./img/banner/banner-1.jpg);">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);"></div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-2.jpg);"></div>
+                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -374,7 +369,8 @@
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>品味手作的簡單嘗新</h5>
             </div>
-            <div class="row px-3">
+            <!-- 6格-hover-food -->
+            <!-- <div class="row px-3">
                 <div class="col-xl-4 col-6">
                     <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
                         alt="" class="img-fluid border border-dark">
@@ -417,14 +413,15 @@
                         <p>甜點</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- swiper-food -->
             <div class="row">
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
+                            
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -433,8 +430,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -443,8 +440,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -453,8 +450,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="1000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -463,8 +460,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="3000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -473,8 +470,8 @@
                 <div class="col-xl-4">
                     <div class="swiper-container">
                         <div class="swiper-wrapper" data-swiper-autoplay="5000">
-                            <div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG)"></div>
-                            <div class="swiper-slide" style="background-image:url(https://c.ndtvimg.com/2019-03/89f6dc5_coffee_625x300_15_March_19.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -759,7 +756,7 @@
 
 
     <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <!-- Swiper-banner -->
     <script>
         var swiper = new Swiper('section#banner .swiper-container', {
@@ -792,7 +789,7 @@
     <script>
         var swiper = new Swiper('section#food .swiper-container', {
             // 自動撥放
-            speed: 1500,
+            speed: 2000,
             autoplay: {
                 stopOnLastSlide: false,
                 disableOnInteraction: true,

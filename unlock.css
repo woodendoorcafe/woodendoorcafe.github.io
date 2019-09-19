@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 3px;
+  border-radius: 11px;
 }
 .slide-to-unlock-bg {
   text-align: center;
@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 3px;
+  border-radius: 11px;
 }
 .slide-to-unlock-bg span {
   position: relative;
@@ -21,7 +21,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 3px;
+  border-radius: 11px 0 0 11px;
   left: 1px;
   top: 1px;
 }
@@ -29,7 +29,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 3px;
+  border-radius: 0 11px 11px 0;
   border: 1px solid #ccc;
   z-index: 6;
   cursor: move;

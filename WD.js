@@ -188,16 +188,98 @@ var swiper = new Swiper('section#comment .swiper-container', {
 
 
 // <!-- 插入解鎖JS -->
+
+var locked;
+window.onload = function () {
+    slide();
     
-        $('.lock').slideToUnlock({
-        text: '記得向右滑動',
-        succText: '恭喜解鎖成功',
-        // 原本顯示的底色
-        bgColor: '#fce',
-        // 滑動時顯示的底色
-        progressColor: '#aaa',
-        // 滑動完顯示的底色
-        succColor: '#ddd',
-        textColor: '#fff',
-        succTextColor: '#fff',
+}
+window.onresize = function () {
+    if (locked == true) {
+        var boxWidth = $('.slide_box').width();
+        $('.slide_xbox').width(boxWidth);
+    } else {
+        slide();
+    }
+}
+//滑動解鎖移動
+function slide() {
+    var slideBox = $('.slide_box')[0];
+    var slideXbox = $('.slide_xbox')[0];
+    var btn = $('.lock_btn')[0];
+    var slideBoxWidth = slideBox.offsetWidth;
+    var btnWidth = btn.offsetWidth;
+    //pc端
+    btn.ondragstart = function () {
+        return false;
+
+
+    };
+    btn.onselectstart = function () {
+        return false;
+    };
+    btn.onmousedown = function (e) {
+        var disX = e.clientX - btn.offsetLeft;
+        document.onmousemove = function (e) {
+            var objX = e.clientX - disX + btnWidth;
+            if (objX < btnWidth) {
+                objX = btnWidth
+            }
+            if (objX > slideBoxWidth) {
+                objX = slideBoxWidth
+            }
+            $('.slide_xbox').width(objX + 'px');
+        };
+        document.onmouseup = function (e) {
+            var objX = e.clientX - disX + btnWidth;
+            if (objX < slideBoxWidth) {
+                objX = btnWidth;
+            } else {
+                objX = slideBoxWidth;
+                locked = true;
+                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
+                $('.lock_btn').css('background-image', 'url("./img/箭頭-02.png")')
+            }
+            $('.slide_xbox').width(objX + 'px');
+            document.onmousemove = null;
+            document.onmouseup = null;
+        };
+    };
+
+
+    //移動端
+    var cont = $(".lock_btn");
+    var startX = 0, sX = 0, moveX = 0, leftX = 0;
+    cont.on({//绑定事件
+        touchstart: function (e) {
+            startX = e.originalEvent.targetTouches[0].pageX;//獲取點擊點的x座標
+            sX = $(this).offset().left;//x軸的偏移量
+            leftX = startX - sX;//鼠標移動的最左端距離區塊左邊距離的位置
+        },
+        touchmove: function (e) {
+            e.preventDefault();
+            moveX = e.originalEvent.targetTouches[0].pageX;//移動過程中x座標
+            var objX = moveX - leftX + btnWidth;
+            if (objX < btnWidth) {
+                objX = btnWidth
+            }
+            if (objX > slideBoxWidth) {
+                objX = slideBoxWidth
+            }
+            $('.slide_xbox').width(objX + 'px');
+        },
+        touchend: function (e) {
+            var objX = moveX - leftX + btnWidth;
+            if (objX < slideBoxWidth) {
+                objX = btnWidth;
+            } else {
+                objX = slideBoxWidth;
+                locked = true;
+                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
+                $('.lock_btn').css('background-image', 'url("./img/箭頭-02.png")')
+            }
+            $('#slide_xbox').width(objX + 'px');
+        }
     });
+}
+

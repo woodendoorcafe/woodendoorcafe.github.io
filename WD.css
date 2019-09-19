@@ -287,11 +287,46 @@ section#food span {
 #contact .container .col-gold-sm .text2 {
     font-size: 15px;
 }
-.lock {
-    height: 40px;
+/* 解鎖套件 */
+.slide_box {
     width: 100%;
-    border-radius:11px;  
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    color: #717171;
+    background-color: #e8e8e8;
+    border-radius: 11px;
 }
+
+.slide_xbox {
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    color: #fff;
+    background-color:brown;
+    position:absolute;
+    box-sizing: border-box;
+    border-radius: 11px;
+}
+
+.lock_btn {
+    cursor: pointer;
+    width: 50px;
+    height: 42px;
+    float: right;
+    background-image: url("./img/箭頭-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+    .lock_btn > .iconfont {
+        font-size: 20px;
+    }
+
 #contact .btn{
     border-radius:11px;
 }

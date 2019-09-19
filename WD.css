@@ -1,3 +1,44 @@
+/* 字體 */
+
+
+nav #navToggler a,p {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+/* h1{} */
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 22px;
+}
+
+/* h6{} */
+
+#about .row div h4{
+    width: 330px;
+    font-size: 24px;
+    background-color: aqua;
+    padding: 15px;
+} 
+
+
+/* @media(){} */
+
+
+
 /* 通用 */
 body {
     overflow-x: hidden;
@@ -59,53 +100,10 @@ body {
 }
 
 
-/* 姿樺的，待整理 */
 
-.space .container .row {
-    background-color: #8ff7f733;
-}
 
-/* .space .container .row .col-gold-lg { */
-/* background-image: url("../img/七彩木門-天花板.jpg"); */
-/* background-size: cover; */
-/* } */
 
-.space .container .row .col-gold-sm h2 {
-    text-align: center;
-    font-size: 25px;
-    margin: 95px 55px 0;
-}
 
-.space .container .row .col-gold-sm h4 {
-    margin: 30px 55px 95px;
-    background-color: unset;
-}
-
-.contact .container .row .col-gold-lg {
-    padding: 30px 80px;
-}
-
-.contact .container .col-gold-sm {
-    padding: 45px 60px;
-}
-
-.contact .container .col-gold-sm .text {
-    padding: 35px;
-}
-
-.lock {
-    height: 40px;
-    width: 100%;
-}
-
-.packing {
-    border-bottom-style: dashed;
-}
-
-.contact .container .col-gold-sm .text2 {
-    font-size: 15px;
-    margin-top: 20%;
-}
 
 /* NAV 導覽列 */
 
@@ -136,6 +134,28 @@ body {
 .pl-n45 {
     padding-left: -45px;
 }
+
+    /* 姿樺的 */
+
+#space .container .row {
+    background-color: #8ff7f733;
+}
+
+/* #space .container .row .col-gold-lg { */
+/* background-image: url("../img/七彩木門-天花板.jpg"); */
+/* background-size: cover; */
+/* } */
+
+/* #space .container .row .col-gold-sm h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 95px 55px 0;
+}
+
+#space .container .row .col-gold-sm h4 {
+    margin: 30px 55px 95px;
+    background-color: unset;
+} */
 
 /* 淺嘗美味 */
 section#food [class*=col-] {
@@ -202,6 +222,12 @@ section#food .swiper-container {
     }
 }
 
+@media (max-width: 800px){
+    section#food .swiper-container {
+        height: 290px;
+    }
+}
+
 section#food .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -227,4 +253,30 @@ section#food span {
 
 /* 線上聯繫 */
 
+    /* 姿樺的 */
+
+/* #contact .container .row .col-gold-lg {
+    padding: 30px 80px;
+}
+
+#contact .container .col-gold-sm {
+    padding: 45px 60px;
+}
+
+#contact .container .col-gold-sm .text {
+    padding: 35px;
+} */
+
+#contact .container .col-gold-sm .text2 {
+    font-size: 15px;
+    margin-top: 20%;
+}
+.lock {
+    height: 40px;
+    width: 100%;
+}
+
+.packing {
+    border-bottom-style: dashed;
+}
 /* Footer */

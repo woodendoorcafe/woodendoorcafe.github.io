@@ -20,13 +20,198 @@
     <!-- 插入解鎖文件 -->
     <link rel="stylesheet" type="text/css" href="unlock.css">
 
-    <link rel="stylesheet" href="WD.css">
-
-
-
     <title>木門咖啡</title>
 
+    <style>
+        /* 通用 */
+        body {
+            overflow-x: hidden;
+        }
 
+        .pt-96 {
+            /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
+            padding-top: 96px;
+        }
+
+        .br-l {
+            border-top-left-radius: 105px;
+        }
+
+        .br-r {
+            border-top-right-radius: 105px;
+        }
+
+        .col-gold-lg {
+            width: 61.8%;
+        }
+
+        .col-gold-sm {
+            width: 38.2%;
+        }
+
+        .px-15 {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .px-30 {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+
+        @media (max-width: 576px) {
+
+
+            .container .slash {
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                /* flex-wrap: wrap; */
+                display: inline-block;
+                line-height: 2;
+            }
+
+        }
+
+        .slash {
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .swiper-img {
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* 姿樺的，待整理 */
+
+        .space .container .row {
+            background-color: #8ff7f733;
+        }
+
+        /* .space .container .row .col-gold-lg { */
+        /* background-image: url("../img/七彩木門-天花板.jpg"); */
+        /* background-size: cover; */
+        /* } */
+
+        .space .container .row .col-gold-sm h2 {
+            text-align: center;
+            font-size: 25px;
+            margin: 95px 55px 0;
+        }
+
+        .space .container .row .col-gold-sm h4 {
+            margin: 30px 55px 95px;
+            background-color: unset;
+        }
+
+        .contact .container .row .col-gold-lg {
+            padding: 30px 80px;
+        }
+
+        .contact .container .col-gold-sm {
+            padding: 45px 60px;
+        }
+
+        .contact .container .col-gold-sm .text {
+            padding: 35px;
+        }
+
+        .lock {
+            height: 40px;
+            width: 100%;
+        }
+
+        .packing {
+            border-bottom-style: dashed;
+        }
+
+        .contact .container .col-gold-sm .text2 {
+            font-size: 15px;
+            margin-top: 20%;
+        }
+
+        /* NAV 導覽列 */
+
+        /* Banner */
+        .pt-80 {
+            padding-top: 80px;
+        }
+
+        .h-banner {
+            height: calc(100vh - 80px);
+        }
+
+
+
+        /* 初次相遇 */
+        /* 一探方隅 */
+
+        .h-space {
+            height: calc(100vh - 160px);
+        }
+
+        .TID {
+            color: antiquewhite;
+            padding-bottom: 12px;
+            /* padding-right: 3px;  */
+        }
+
+        .pl-n45 {
+            padding-left: -45px;
+        }
+
+        /* 淺嘗美味 */
+        section#food [class*=col-] {
+            /* 針對 section.food 裡的有col開頭的class的設定 */
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .food:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 32pt;
+            font-family: '微軟正黑體';
+            font-weight: bold;
+        }
+
+        .rgba-light:hover {
+            background-color: #5a270b62;
+        }
+
+        .rgba-dark:hover {
+            background-color: #5a270ba4;
+        }
+
+        .food.card-img-overlay p {
+            display: none;
+        }
+
+        .food.card-img-overlay:hover p {
+            display: inline;
+        }
+
+
+        section#food .swiper-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        section#food .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* 佳評如潮 */
+
+        /* 線上聯繫 */
+
+        /* Footer */
+    </style>
 </head>
 
 <body>
@@ -36,11 +221,10 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container d-flex align-items-end">
             <a class="navbar-brand" href="#banner">
-                <img src="./img/logo.png" height="54" class="d-inline-block align-top" alt="木門咖啡">
+                <img src="./img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle"
+                    alt="木門咖啡">
                 <!-- logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54 -->
-                <h1 class="d-none">木門咖啡</h1>
             </a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
                 aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -252,91 +436,77 @@
             </div> -->
             <!-- swiper-food -->
             <div class="row px-15">
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameA " data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
+                        <div class="swiper-wrapper" data-swiper-autoplay="1000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)">
+                                <div class="food card-img-overlay rgba-light">
+                                        <p>特調</p>
+                                    </div>
                             </div>
-                            <div class="swiper-slide nameA" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)">
+                                <div class="food card-img-overlay rgba-light">
+                                        <p>特調</p>
+                                    </div>
                             </div>
+                            
                         </div>
-                        <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">特調</p>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        
                     </div>
-
-
+                    
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameB" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameB" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
+                        <div class="swiper-wrapper" data-swiper-autoplay="3000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">咖啡</p>
                 </div>
-
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameC" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameC" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
+                        <div class="swiper-wrapper" data-swiper-autoplay="5000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">茶飲</p>
                 </div>
-
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameD" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameD" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
+                        <div class="swiper-wrapper" data-swiper-autoplay="1000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">輕食</p>
                 </div>
-
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameE" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameE" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
+                        <div class="swiper-wrapper" data-swiper-autoplay="3000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">主食</p>
                 </div>
-
-                <div class="col-md-4 col-6">
+                <div class="col-xl-4">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameF" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameF" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
+                        <div class="swiper-wrapper" data-swiper-autoplay="5000">
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-4.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./img/comment/comment-3.jpg)"></div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="bg-warning p-2 m-auto d-lg-none d-sm-flex d-block">甜點</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -352,38 +522,38 @@
             </div>
 
             <!-- 電腦版 是 masonry -->
-            <div class="row masonry d-lg-flex d-none">
-                <div class="col-xl-4 col-md-6 col-12 mb-4 item">
+            <div class="row masonry d-sm-block d-none">
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 pt-lg-5 mb-4 item">
+                <div class="col-12 col-xl-4 col-md-6 pt-lg-5 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 mb-4 item">
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 mb-4 item">
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 pt-lg-5 mb-4 item">
+                <div class="col-12 col-xl-4 col-md-6 pt-lg-5 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-12 mb-4 item">
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
                     <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
                     <div class="card-body bg-warning">
                         <h4>這是瀑布流測試文字的卡片內文唷</h4>
@@ -392,9 +562,9 @@
             </div>
 
             <!-- 手機版 是 swiper -->
-            <div class="swiper-container d-lg-none d-sm-flex d-block">
-                <div class="swiper-wrapper px-sm-5">
-                    <div class="swiper-slide name">
+            <div class="swiper-container d-sm-flex d-block">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="w-100">
                             <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
                             <div class="card-body bg-warning">
@@ -659,20 +829,107 @@
 
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- Swiper-banner -->
+    <script>
+        var swiper = new Swiper('section#banner .swiper-container', {
+            loop: true,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- Swiper-space -->
+    <script>
+        var swiper = new Swiper('section#space .swiper-container', {
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- swiper-food -->
+    <script>
+        var myswiper = new Swiper('section#food .swiper-container', {
+
+            // 自動撥放
+            speed: 2000,
+            autoplay: {
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            // 可以一直輪迴
+            loop: true,
+
+            // 立方體輪播效果
+            effect: 'cube',
+            grabCursor: true,
+            // 輪播的陰影效果
+            cubeEffect: {
+                shadow: false, // 關閉陰影
+                // slideShadows: true,
+                // shadowOffset: 20,
+                // shadowScale: 0.94,
+            },
+            pagination: {
+                // el: '.swiper-pagination',
+            },
+        });
+
+        mySwiper.el.onmouseover = function () {
+            mySwiper.autoplay.stop();
+        };
+
+    </script>
+
+    <!-- swiper-comment -->
+    <script>
+        var swiper = new Swiper('section#comment .swiper-container', {
+            loop: true,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
     <!-- 瀑布流 masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(function () {
+            $('.masonry').masonry({
+                itemSelector: '.item'
+            })
+        });
+    </script>
 
-    <!-- 解鎖 JS -->
+    <!-- 插入解鎖JS -->
     <script src='http://cdn.staticfile.org/jquery/1.10.0/jquery.min.js'></script>
     <script src='unlock.js'></script>
-
-
-
-    <!-- 匯入自己寫的 JS -->
-    <script src="/WD.js"></script>
-
-
+    <script>
+        $('.lock').slideToUnlock({
+            text: '記得向右滑動',
+            succText: '恭喜解鎖成功',
+            // 原本顯示的底色
+            bgColor: '#fce',
+            // 滑動時顯示的底色   
+            progressColor: '#aaa',
+            // 滑動完顯示的底色  
+            succColor: '#ddd',
+            textColor: '#fff',
+            succTextColor: '#fff',
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,230 @@
+/* 通用 */
+body {
+    overflow-x: hidden;
+}
+
+.pt-96 {
+    /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
+    padding-top: 96px;
+}
+
+.br-l {
+    border-top-left-radius: 105px;
+}
+
+.br-r {
+    border-top-right-radius: 105px;
+}
+
+.col-gold-lg {
+    width: 61.8%;
+}
+
+.col-gold-sm {
+    width: 38.2%;
+}
+
+.px-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.px-30 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+@media (max-width: 576px) {
+
+
+    .container .slash {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        /* flex-wrap: wrap; */
+        display: inline-block;
+        line-height: 2;
+    }
+
+}
+
+.slash {
+    border-top: none;
+    border-bottom: none;
+}
+
+.swiper-img {
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 姿樺的，待整理 */
+
+.space .container .row {
+    background-color: #8ff7f733;
+}
+
+/* .space .container .row .col-gold-lg { */
+/* background-image: url("../img/七彩木門-天花板.jpg"); */
+/* background-size: cover; */
+/* } */
+
+.space .container .row .col-gold-sm h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 95px 55px 0;
+}
+
+.space .container .row .col-gold-sm h4 {
+    margin: 30px 55px 95px;
+    background-color: unset;
+}
+
+.contact .container .row .col-gold-lg {
+    padding: 30px 80px;
+}
+
+.contact .container .col-gold-sm {
+    padding: 45px 60px;
+}
+
+.contact .container .col-gold-sm .text {
+    padding: 35px;
+}
+
+.lock {
+    height: 40px;
+    width: 100%;
+}
+
+.packing {
+    border-bottom-style: dashed;
+}
+
+.contact .container .col-gold-sm .text2 {
+    font-size: 15px;
+    margin-top: 20%;
+}
+
+/* NAV 導覽列 */
+
+/* Banner */
+.pt-80 {
+    padding-top: 80px;
+}
+
+.h-banner {
+    height: calc(100vh - 80px);
+}
+
+
+
+/* 初次相遇 */
+/* 一探方隅 */
+
+.h-space {
+    height: calc(100vh - 160px);
+}
+
+.TID {
+    color: antiquewhite;
+    padding-bottom: 12px;
+    /* padding-right: 3px;  */
+}
+
+.pl-n45 {
+    padding-left: -45px;
+}
+
+/* 淺嘗美味 */
+section#food [class*=col-] {
+    /* 針對 section.food 裡的有col開頭的class的設定 */
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+.food:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 32pt;
+    font-family: '微軟正黑體';
+    font-weight: bold;
+}
+
+.rgba-light:hover {
+    background-color: #5a270b62;
+}
+
+.rgba-dark:hover {
+    background-color: #5a270ba4;
+}
+
+.food.card-img-overlay p {
+    display: none;
+}
+
+.food.card-img-overlay:hover p {
+    display: inline;
+}
+
+
+section#food .swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 576px){
+    section#food .swiper-container {
+        height: 230px;
+    }
+    section#food span {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 32pt;
+        font-family: '微軟正黑體';
+        font-weight: bold;
+        line-height: 230px;
+    }
+
+    .span-light {
+        background-color: unset;
+    }
+    
+    .span-dark {
+        background-color: unset;
+    }
+}
+
+section#food .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+section#food span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 32pt;
+    font-family: '微軟正黑體';
+    font-weight: bold;
+    line-height: 400px;
+}
+.span-light {
+    background-color: #0b5a1236;
+}
+
+.span-dark {
+    background-color: #5a1d0b36;
+}
+/* 佳評如潮 */
+
+/* 線上聯繫 */
+
+/* Footer */

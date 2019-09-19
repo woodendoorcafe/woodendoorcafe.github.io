@@ -1,6 +1,9 @@
 /* 字體 */
 
-
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight:700;
+}
 nav #navToggler a,p {
     font-size: 22px;
     padding: 0;
@@ -26,14 +29,18 @@ h5{
 }
 
 /* h6{} */
-
+#comment h4{
+    font-weight:100 !important; 
+}
 #about .row div h4{
     width: 330px;
     font-size: 24px;
     background-color: aqua;
     padding: 15px;
 } 
-
+#contact h3{
+    margin: 15px 0;
+}
 
 /* @media(){} */
 
@@ -63,6 +70,22 @@ body {
 
 .col-gold-sm {
     width: 38.2%;
+}
+
+@media (max-width: 1024px) {
+
+    .col-gold-lg {
+        width: 100%;
+    }
+    
+    .col-gold-sm {
+        width: 100%;
+    }
+
+    #contact .text h3{
+        display: none;
+    }
+
 }
 
 .px-15 {
@@ -202,24 +225,7 @@ section#food .swiper-container {
     section#food .swiper-container {
         height: 230px;
     }
-    section#food span {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        color: #ffffff;
-        font-size: 32pt;
-        font-family: '微軟正黑體';
-        font-weight: bold;
-        line-height: 230px;
-    }
-
-    .span-light {
-        background-color: unset;
-    }
-    
-    .span-dark {
-        background-color: unset;
-    }
+   
 }
 
 @media (max-width: 800px){
@@ -233,14 +239,22 @@ section#food .swiper-slide {
     background-size: cover;
 }
 section#food span {
+    width: 100%;
+    height: 100%;
+}
+.aaa{
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 400px;
     color: #ffffff;
     font-size: 32pt;
     font-family: '微軟正黑體';
     font-weight: bold;
-    line-height: 400px;
+    
+}
+.bbb{
+    display: none;
 }
 .span-light {
     background-color: #0b5a1236;
@@ -249,6 +263,7 @@ section#food span {
 .span-dark {
     background-color: #5a1d0b36;
 }
+
 /* 佳評如潮 */
 
 /* 線上聯繫 */
@@ -266,17 +281,22 @@ section#food span {
 #contact .container .col-gold-sm .text {
     padding: 35px;
 } */
-
+.form-control{
+    border-radius:11px;  
+}
 #contact .container .col-gold-sm .text2 {
     font-size: 15px;
-    margin-top: 20%;
 }
 .lock {
     height: 40px;
     width: 100%;
+    border-radius:11px;  
 }
-
-.packing {
-    border-bottom-style: dashed;
+#contact .btn{
+    border-radius:11px;
+}
+.parking {
+    border-width:2px;
+    border-bottom-style: dotted;
 }
 /* Footer */

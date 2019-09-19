@@ -177,7 +177,7 @@ var myswiper = new Swiper('section#food .swiper-container', {
 
 var swiper = new Swiper('section#comment .swiper-container', {
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

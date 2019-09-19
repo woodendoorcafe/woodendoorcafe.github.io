@@ -142,6 +142,15 @@ body {
 
 
 /* 初次相遇 */
+section#about .m-n-about1 {
+    margin: 5rem 0 -6rem -10rem;
+}
+section#about .m-n-about2 {
+    margin: 0rem 0rem -19rem -51rem;
+}
+section#about .m-n-about3 {
+    margin: -13.5rem 0 -4.5rem -3rem;
+}
 /* 一探方隅 */
 
 .h-space {
@@ -265,7 +274,11 @@ section#food span {
 }
 
 /* 佳評如潮 */
-
+section#comment [class*=col-] {
+    /* 針對 section#comment 裡的有col開頭的class的設定 */
+    padding-right: 25px;
+    padding-left: 25px;
+}
 /* 線上聯繫 */
 
     /* 姿樺的 */

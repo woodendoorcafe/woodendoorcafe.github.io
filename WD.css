@@ -1,7 +1,7 @@
 /* 字體 */
 
 body{
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC','微軟正黑體', sans-serif;
     font-weight:700;
 }
 nav #navToggler a,p {
@@ -38,8 +38,28 @@ h5{
     background-color: aqua;
     padding: 15px;
 } 
+#about .row div h3{
+    font-size: 29px;
+    font-weight: 400;
+}
 #contact h3{
     margin: 15px 0;
+}
+#food .swiper-container p{
+    font-size: 40px;
+}
+
+#contact label{
+    font-size: 26px;
+}
+
+#contact p{
+    font-size: 16px;
+    color: rgb(139, 133, 125);
+    padding-left: 5px;
+}
+#contact input, #Select_adult, #Select_child {
+    font-size: 21px;
 }
 
 /* @media(){} */
@@ -166,12 +186,17 @@ section#about .m-n-about3 {
 .pl-n45 {
     padding-left: -45px;
 }
+section#space .container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
     /* 姿樺的 */
 
 #space .container .row {
     background-color: #8ff7f733;
 }
+
 
 /* #space .container .row .col-gold-lg { */
 /* background-image: url("../img/七彩木門-天花板.jpg"); */
@@ -280,6 +305,21 @@ section#comment [class*=col-] {
     padding-left: 25px;
 }
 /* 線上聯繫 */
+#contact #Select_adult, #Select_child {
+    padding: 0rem .75rem;
+}
+#contact .pr-8{
+    padding-right: 8rem;
+}
+
+@media(max-width: 800px){
+    #contact .pr-8{
+        padding-right: 3rem;
+    }
+}
+#contact .ml-n-2{
+    margin-left: -37px;
+}
 
     /* 姿樺的 */
 
@@ -303,37 +343,32 @@ section#comment [class*=col-] {
 /* 解鎖套件 */
 .slide_box {
     width: 100%;
-    height: 42px;
+    height: 38px;
     text-align: center;
-    line-height: 42px;
-    font-size: 14px;
-    color: #717171;
     background-color: #e8e8e8;
-    border-radius: 11px;
+    border-radius: 16px;
 }
 
 .slide_xbox {
-    height: 42px;
+    height: 38px;
     text-align: center;
-    line-height: 42px;
-    font-size: 20px;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: 400;
     color: #fff;
     background-color:brown;
     position:absolute;
     box-sizing: border-box;
-    border-radius: 11px;
+    border-radius: 16px;
 }
 
 .lock_btn {
     cursor: pointer;
-    width: 50px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     float: right;
-    background-image: url("./img/箭頭-02.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    font-size: 33px;
+    line-height: 38px;    
 }
 
     .lock_btn > .iconfont {

@@ -237,15 +237,14 @@ function slide() {
             } else {
                 objX = slideBoxWidth;
                 locked = true;
-                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
-                $('.lock_btn').css('background-image', 'url("./img/箭頭-02.png")')
+                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong"></i></div>');
+                
             }
             $('.slide_xbox').width(objX + 'px');
             document.onmousemove = null;
             document.onmouseup = null;
         };
     };
-
 
     //移動端
     var cont = $(".lock_btn");
@@ -275,8 +274,7 @@ function slide() {
             } else {
                 objX = slideBoxWidth;
                 locked = true;
-                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" style="color: #35b34a;"></i></div>');
-                $('.lock_btn').css('background-image', 'url("./img/箭頭-02.png")')
+                $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong" ></i></div>');
             }
             $('#slide_xbox').width(objX + 'px');
         }

@@ -1,0 +1,327 @@
+/* 通用 */
+body {
+    overflow-x: hidden;
+}
+.icon{
+    width: 34px;
+    height: 34px;
+}
+.pt-96 {
+    /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
+    padding-top: 96px;
+}
+.mb-96{
+    margin-bottom: 96px;
+}
+
+.br-l {
+    border-top-left-radius: 105px;
+}
+
+.br-r {
+    border-top-right-radius: 105px;
+}
+
+.col-gold-lg {
+    width: 61.8%;
+}
+
+.col-gold-sm {
+    width: 38.2%;
+}
+
+@media (max-width: 1024px) {
+
+    .col-gold-lg {
+        width: 100%;
+    }
+    
+    .col-gold-sm {
+        width: 100%;
+    }
+
+    #contact .text h3{
+        display: none;
+    }
+
+}
+
+.px-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.px-30 {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+@media (max-width: 576px) {
+
+
+    .container .slash {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        /* flex-wrap: wrap; */
+        display: inline-block;
+        line-height: 2;
+    }
+
+}
+
+.slash {
+    border-top: none;
+    border-bottom: none;
+}
+
+.swiper-img {
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+/* NAV 導覽列 */
+
+/* Banner */
+.pt-80 {
+    padding-top: 80px;
+}
+
+.h-banner {
+    height: calc(100vh - 80px);
+}
+
+
+
+/* 初次相遇 */
+section#about .m-n-about1 {
+    margin: 5rem 0 -6rem -10rem;
+}
+section#about .m-n-about2 {
+    margin: 0rem 0rem -19rem -51rem;
+}
+section#about .m-n-about3 {
+    margin: -13.5rem 0 -4.5rem -3rem;
+}
+/* 一探方隅 */
+
+.h-space {
+    height: calc(100vh - 160px);
+}
+
+.pl-n45 {
+    padding-left: -45px;
+}
+section#space .container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    /* 姿樺的 */
+
+#space .container .row {
+    background-color: #8ff7f733;
+}
+
+
+/* #space .container .row .col-gold-lg { */
+/* background-image: url("../img/七彩木門-天花板.jpg"); */
+/* background-size: cover; */
+/* } */
+
+/* #space .container .row .col-gold-sm h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 95px 55px 0;
+}
+
+#space .container .row .col-gold-sm h4 {
+    margin: 30px 55px 95px;
+    background-color: unset;
+} */
+
+/* 淺嘗美味 */
+section#food [class*=col-] {
+    /* 針對 section.food 裡的有col開頭的class的設定 */
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+.food:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 32pt;
+    font-family: '微軟正黑體';
+    font-weight: bold;
+}
+
+.rgba-light:hover {
+    background-color: #5a270b62;
+}
+
+.rgba-dark:hover {
+    background-color: #5a270ba4;
+}
+
+.food.card-img-overlay p {
+    display: none;
+}
+
+.food.card-img-overlay:hover p {
+    display: inline;
+}
+
+
+section#food .swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 576px){
+    section#food .swiper-container {
+        height: 230px;
+    }
+   
+}
+
+@media (max-width: 800px){
+    section#food .swiper-container {
+        height: 290px;
+    }
+}
+
+section#food .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+section#food span {
+    width: 100%;
+    height: 100%;
+}
+.aaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 400px;
+    color: #ffffff;
+    font-size: 32pt;
+    font-family: '微軟正黑體';
+    font-weight: bold;
+    
+}
+.bbb{
+    display: none;
+}
+.span-light {
+    background-color: #0b5a1236;
+}
+
+.span-dark {
+    background-color: #5a1d0b36;
+}
+
+/* 佳評如潮 */
+section#comment [class*=col-] {
+    /* 針對 section#comment 裡的有col開頭的class的設定 */
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* 線上聯繫 */
+#contact #Select_adult, #Select_child {
+    padding: 0rem .75rem;
+}
+#contact .pr-8{
+    padding-right: 8rem;
+}
+#contact .icon_text{
+    padding-left: 5px;
+}
+#contact .traffic .pr-6{
+    padding-right: 6.6rem;
+}
+
+#contact .traffic .col-gold-sm.pr-13{
+    padding-right: 13rem;
+}
+
+@media(max-width: 800px){
+    #contact .pr-8{
+        padding-right: 3rem;
+    }
+}
+#contact .ml-n-2{
+    margin-left: -37px;
+}
+
+    /* 姿樺的 */
+
+/* #contact .container .row .col-gold-lg {
+    padding: 30px 80px;
+}
+
+#contact .container .col-gold-sm {
+    padding: 45px 60px;
+}
+
+#contact .container .col-gold-sm .text {
+    padding: 35px;
+} */
+.form-control{
+    border-radius:11px;  
+}
+
+#contact .traffic .form-group{
+    margin: 0;
+}
+/* 解鎖套件 */
+.slide_box {
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border-radius: 16px;
+}
+
+.slide_xbox {
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color:brown;
+    position:absolute;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.lock_btn {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    float: right;
+    font-size: 33px;
+    line-height: 38px;    
+}
+
+.lock_btn > .iconfont {
+    font-size: 20px;
+    }
+
+#contact .btn{
+    border-radius:11px;
+}
+.parking {
+   border-bottom: 2px rgb(139, 133, 125)  dotted ;
+}
+/* Footer */

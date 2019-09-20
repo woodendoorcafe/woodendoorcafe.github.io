@@ -33,7 +33,7 @@
     <!-- NAV 不動 -->
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="container d-flex align-items-end">
+        <div class="container d-flex align-items-md-end">
             <a class="navbar-brand" href="#banner">
                 <img src="./img/logo_gray90.png" class="d-inline-block align-top" alt="木門咖啡">
                 <!-- logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54 -->
@@ -45,24 +45,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navToggler">
-                <ul class="navbar-nav ml-auto d-flex align-items-end">
+            <div class="collapse navbar-collapse h-banner" id="navToggler">
+                <ul class="navbar-nav ml-auto d-flex align-items-lg-end text-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">初次相遇</a>
                     </li>
-                    <p class="px-3">/</p>
+                    <p class="px-3 d-sm-block d-none">/</p>
                     <li class="nav-item">
                         <a class="nav-link" href="#space">一探方隅</a>
                     </li>
-                    <p class="px-3">/</p>
+                    <p class="px-3 d-sm-block d-none">/</p>
                     <li class="nav-item">
                         <a class="nav-link" href="#food">淺嘗美味</a>
                     </li>
-                    <p class="px-3">/</p>
+                    <p class="px-3 d-sm-block d-none">/</p>
                     <li class="nav-item">
                         <a class="nav-link" href="#comment">佳評如潮</a>
                     </li>
-                    <p class="px-3">/</p>
+                    <p class="px-3 d-sm-block d-none">/</p>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">線上聯繫</a>
                     </li>
@@ -127,47 +127,52 @@
     <section id="about" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 slash ">初次相遇</h2>
+                <h2 class="pr-md-3 slash ">初次相遇</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>冉冉陽光指引我們相遇</h5>
             </div>
             <!-- PC版 -->
-            <div class="d-md-none d-lg-block">
-                    <div class="row mb-xl-5 ">
-                            <div class="col-xl-7 d-flex align-items-center">
-                                <img class="br-l" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
-                                <div class="m-n-about1">
-                                    <h4>Logo是將Wooden Door其中的W, D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一
-                                    </h4>
-                                </div>
-                            </div>
+            <div class="d-none d-lg-block">
+                <div class="row mb-md-5 ">
+                    <div class="col-xl-7 d-flex align-items-center">
+                        <img class="br-l" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <div class="m-n-about1">
+                            <h4>Logo是將Wooden Door其中的W, D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一
+                            </h4>
                         </div>
-                        <div class="row mb-xl-5 justify-content-end">
-                            <div class="col-xl-7 d-flex align-items-center">
-                                <img class="br-r" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
-                                <div class="m-n-about2">
-                                    <h4 class="m-n-about3" style="width: 175px;height: 130px;background-color: blue"></h4>
-                                    <h4>天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-<!-- MOBILE版 -->
-<div class="d-lg-none d-md-block">
-        <div class="row">
-                <div class="col-10 d-flex align-items-center">
-                    <img class="" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
-                    <img class="" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
-                    <div class="m-n-about1">
-                        <h4>Logo是將Wooden Door其中的W, D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一，天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。
-                        </h4>
                     </div>
                 </div>
-            </div>            
-</div>
+                <div class="row mb-md-5 justify-content-end">
+                    <div class="col-xl-7 d-flex align-items-center">
+                        <img class="br-r" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <div class="m-n-about2">
+                            <h4 class="m-n-about3" style="width: 175px;height: 130px;background-color: blue"></h4>
+                            <h4>天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MOBILE版 -->
+            <div class="d-lg-none d-block">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <img class="" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                    </div>
+                    <div class="col-10">
+                        <img class="mt-4" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                    </div>
+                    <div class="col-4">
+                        <div class="m-n-about-m">
+                            <h4>Logo是將Wooden Door其中的W,
+                                D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一，天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row ">
-                <div class="col d-flex justify-content-center align-items-center">
+                <div class="col d-flex justify-content-center align-items-center mt-4">
                     <h5 class="pr-3"> ● </h5>
                     <h3> 我們用心經營、努力創造，只為了呈現最好的給大家 </h3>
                     <h5 class="pl-3"> ● </h5>
@@ -180,7 +185,7 @@
     <section id="space" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 slash ">一探方隅</h2>
+                <h2 class="pr-md-3 slash ">一探方隅</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>踏進悠閑舒適的一隅</h5>
             </div>
@@ -221,7 +226,7 @@
     <section id="food" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 slash ">淺嘗美味</h2>
+                <h2 class="pr-md-3 slash ">淺嘗美味</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>品味手作的簡單嘗新</h5>
             </div>
@@ -238,7 +243,7 @@
                                 style="background-image:url(./img/comment/comment-3.jpg)">
                             </div>
                         </div>
-                       </div>
+                    </div>
                     <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">特調</p>
                 </div>
                 <div class="col-md-4 col-6">
@@ -320,7 +325,7 @@
         <div class="container">
 
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 slash ">佳評如潮</h2>
+                <h2 class="pr-md-3 slash ">佳評如潮</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>匯集好評的迸流</h5>
             </div>
@@ -405,7 +410,7 @@
     <section id="contact" class="pt-96">
         <div class="container">
             <div class="d-sm-flex d-block align-items-end text-center mb-3">
-                <h2 class="pr-3 slash ">線上聯繫</h2>
+                <h2 class="pr-md-3 slash ">線上聯繫</h2>
                 <h5 class="d-sm-block d-none">/</h5>
                 <h5>搭起一個互動橋樑</h5>
             </div>

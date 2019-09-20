@@ -87,6 +87,21 @@ body {
 
 
 /* NAV 導覽列 */
+nav .navbar-collapse{
+    height: unset;
+}
+
+@media(max-width: 768px){
+    .navbar-light .navbar-brand {
+        margin: 0 calc(50vw - 148px) 0 auto;
+    }
+    nav .navbar-collapse{
+        height: calc(100vh - 80px);
+    }
+    nav #navToggler a{
+        line-height: calc(calc(100vh - 80px) / 5);
+    }
+}
 
 /* Banner */
 .pt-80 {
@@ -109,6 +124,25 @@ section#about .m-n-about2 {
 section#about .m-n-about3 {
     margin: -13.5rem 0 -4.5rem -3rem;
 }
+section#about .row {
+    /* 手機板使用 */
+    /* margin: -18rem 0rem 0rem 0rem; */
+    position: relative;
+}
+section#about .col-4{
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 108px);
+}
+
+@media(max-width: 400px){
+   
+    section#about .col-4{
+        right: 67px;
+    }
+
+}
+
 /* 一探方隅 */
 
 .h-space {

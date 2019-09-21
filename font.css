@@ -31,9 +31,7 @@ h5{
 }
 
 /* h6{} */
-#comment h4{
-    font-weight:100 !important;
-}
+
 #about .row div h4{
     width: 330px;
     font-size: 18px;
@@ -64,9 +62,14 @@ h5{
     font-family: '微軟正黑體', 'sans-serif';
 }
 
+
 #food p{
     font-size: 40px;
     text-align: center;
+}
+
+#comment h4{
+    font-weight:100 !important;letter-spacing: 5px ;
 }
 
 #contact h3{
@@ -95,16 +98,26 @@ h5{
     font-size: 21px;
 }
 
-
 @media(max-width: 768px){
+    #about .row div h4{
+        width: 224px;
+    }
+
+}
+
+@media(max-width: 576px){
     h2{
         font-size: 29px;    
     }
-    
+    /* h3{
+    font-size: 26px;
+    } */
     h4{
         font-size: 19px;
     }
-    
+    /* h5{
+    font-size: 22px;
+    } */
     
     #about .row div h5{
         font-size: 12px;
@@ -121,5 +134,11 @@ h5{
         background-color:#8ef6f6bb;
         padding: 16px;    
     } 
-
+    #space .col-gold-sm h4{
+        font-size: 19px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-left: unset;
+    }
+    
 }

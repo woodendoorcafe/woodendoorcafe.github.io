@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="WD.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="swiper_photo.css">
 
 
     <title>木門咖啡</title>
@@ -76,9 +77,11 @@
         <!-- Swiper -->
         <div class="swiper-container w-100 h-banner">
             <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);"></div>
-                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-2.jpg);"></div>
-                <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-3.jpg);"></div>
+                <div class="swiper-slide swiper-img banner_imgsrc1"></div>
+                <div class="swiper-slide swiper-img banner_imgsrc2"></div>
+                <div class="swiper-slide swiper-img banner_imgsrc3"></div>
+                <div class="swiper-slide swiper-img banner_imgsrc4"></div>
+                <div class="swiper-slide swiper-img banner_imgsrc5"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -135,7 +138,7 @@
             <div class="d-none d-lg-block">
                 <div class="row mb-md-5 ">
                     <div class="col-xl-7 d-flex align-items-center">
-                        <img class="br-l" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <img class="br-l" src="/img/PC/about/aboutus1_1.jpg" alt="空間照片" style="width: 100%;">
                         <div class="m-n-about1">
                             <h4>Logo是將Wooden Door其中的W, D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一
                             </h4>
@@ -144,7 +147,7 @@
                 </div>
                 <div class="row mb-md-5 justify-content-end">
                     <div class="col-xl-7 d-flex align-items-center">
-                        <img class="br-r" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <img class="br-r" src="/img/PC/about/aboutus1_2.jpg" alt="空間照片" style="width: 100%;">
                         <div class="m-n-about2">
                             <h4 class="m-n-about3" style="width: 175px;height: 130px;background-color: blue"></h4>
                             <h4>天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。
@@ -157,10 +160,10 @@
             <div class="d-lg-none d-block">
                 <div class="row justify-content-center">
                     <div class="col-10">
-                        <img class="" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <img class="" src="/img/PC/about/aboutus1_1.jpg" alt="空間照片" style="width: 100%;">
                     </div>
                     <div class="col-10">
-                        <img class="mt-4" src="./img/space/space1_3.jpg" alt="空間照片" style="width: 100%;">
+                        <img class="mt-4" src="/img/PC/about/aboutus1_2.jpg" alt="空間照片" style="width: 100%;">
                     </div>
                     <div class="col-4">
                         <div class="m-n-about-m">
@@ -193,11 +196,17 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper w-100 h-space">
-                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);">
+                    <div class="swiper-slide swiper-img space_imgsrc1">
                     </div>
-                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-2.jpg);">
+                    <div class="swiper-slide swiper-img space_imgsrc2">
                     </div>
-                    <div class="swiper-slide swiper-img" style="background-image: url(./img/banner/banner-1.jpg);">
+                    <div class="swiper-slide swiper-img space_imgsrc3">
+                    </div>
+                    <div class="swiper-slide swiper-img space_imgsrc4">
+                    </div>
+                    <div class="swiper-slide swiper-img space_imgsrc5">
+                    </div>
+                    <div class="swiper-slide swiper-img space_imgsrc6">
                     </div>
                 </div>
                 <!-- Add Pagination -->
@@ -205,14 +214,15 @@
             </div>
             <!-- 一探方隅的空間設計概念 -->
             <div class="row pt-80">
-                <div class="col-gold-lg ">
+                <div class="col-gold-lg d-md-flex d-none">
                     <div class="row w-100 ">
                         <div class="col d-sm-flex justify-content-end align-items-end d-none w-100 swiper-img"
-                            style="height: 500px; background-image: url(./img/space/space1_3.jpg);">
+                            style="height: 500px; background-image: url('./img/PC/space/space2_1.jpg');">
                             <div class="TID">2017商業空間類餐飲空間TID獎</div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
+               
                 <div class="col-gold-sm px-5 py-5 bg-light">
                     <h2 class="text-center">空間設計概念</h2>
                     <h4>以「自然」「舒適」為主軸，運用切割天窗引入光線，減少人工照明的同時，落實環保節能的永續精神，而空間產生無限延伸的奇幻感受，側牆富含生命力的植生牆面讓植栽在溫煦的陽光下，充分進行光合作用，人與植物即便在室內也能享受日光帶來的溫暖，形塑木門咖啡的風格意象。
@@ -236,66 +246,9 @@
                 <div class="col-md-4 col-6">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide nameA " data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
+                            <div class="swiper-slide meal_imgsrc1 nameE" data-swiper-autoplay="1600">
                             </div>
-                            <div class="swiper-slide nameA" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">特調</p>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameB" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameB" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">咖啡</p>
-                </div>
-
-                <div class="col-md-4 col-6">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameC" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameC" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">茶飲</p>
-                </div>
-
-                <div class="col-md-4 col-6">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameD" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameD" data-swiper-autoplay="1500"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">輕食</p>
-                </div>
-
-                <div class="col-md-4 col-6">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide nameE" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
-                            </div>
-                            <div class="swiper-slide nameE" data-swiper-autoplay="1600"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
+                            <div class="swiper-slide meal_imgsrc2 nameE" data-swiper-autoplay="1600">
                             </div>
                         </div>
                     </div>
@@ -305,17 +258,63 @@
                 <div class="col-md-4 col-6">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide nameF" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-4.jpg)">
+                            <div class="swiper-slide brunch_imgsrc1 nameD" data-swiper-autoplay="1500">
                             </div>
-                            <div class="swiper-slide nameF" data-swiper-autoplay="1700"
-                                style="background-image:url(./img/comment/comment-3.jpg)">
+                            <div class="swiper-slide brunch_imgsrc2 nameD" data-swiper-autoplay="1500">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">輕食</p>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide cafe_imgsrc1 nameB" data-swiper-autoplay="1600">
+                            </div>
+                            <div class="swiper-slide cafe_imgsrc2 nameB" data-swiper-autoplay="1600">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">咖啡</p>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide special_imgsrc1 nameA" data-swiper-autoplay="1500">
+                            </div>
+                            <div class="swiper-slide special_imgsrc2 nameA" data-swiper-autoplay="1500">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">特調</p>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tea_imgsrc1 nameC" data-swiper-autoplay="1700">
+                            </div>
+                            <div class="swiper-slide tea_imgsrc2 nameC" data-swiper-autoplay="1700">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">茶飲</p>
+                </div>            
+                
+                <div class="col-md-4 col-6">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide 
+                            dessert_imgsrc1 nameF" data-swiper-autoplay="1700">
+                            </div>
+                            <div class="swiper-slide dessert_imgsrc2 nameF" data-swiper-autoplay="1700">
                             </div>
                         </div>
                     </div>
                     <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">甜點</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -333,71 +332,95 @@
             <!-- 電腦版 是 masonry -->
             <div class="row masonry d-lg-flex d-none">
                 <div class="col-xl-4 col-md-6 col-12 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_1.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>用餐氣氛非常好，很適合朋友間聚會聊天，更適合喜愛特色裝潢的食客們，白天透明採光下店內別有一番風味~</h4>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 pt-lg-5 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_2.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>環境非常舒服，座位也很舒適，就算不是來用餐，來這裡喝杯咖啡聊聊天也很棒，很喜歡這種用餐環境！</h4>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_3.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>不僅外觀美麗新穎，連餐點也都是用心到不行的優質好店，這次新推出的菜色看起來都非常厲害，趕快來試試吧。</h4>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 pt-lg-5 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_6.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>明亮舒適的空間，讓人可以很享受在這裡的時光，餐點的美味度也很夠，不管是義大利麵還是鬆餅都蠻好吃的！</h4>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 pt-lg-5 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_4.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>木門咖啡的餐點漂亮卻不失美味，幾乎是每道菜都很喜歡，用餐環境更是寬敞舒適明亮，而且還免收服務費！</h4>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-12 pt-lg-5 item">
-                    <img src="./img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <img src="./img/PC/comment/comment_5.jpg" alt="" class="img-fluid br-l w-100">
                     <div class="card-body bg-warning">
-                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                        <h4>東西好吃~而且店員都很親切，會過來詢問是否有合口味，或是有什麼需要改進的地方，感覺上還蠻不賴的哦!</h4>
                     </div>
                 </div>
+                
             </div>
 
             <!-- 手機版 是 swiper -->
-            <div class="swiper-container d-lg-none d-sm-flex d-block">
-                <div class="swiper-wrapper px-sm-5">
-                    <div class="swiper-slide name">
-                        <div class="w-100">
-                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+            <div class="swiper-container d-lg-none d-sm-flex d-block align-items-center mb-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="comment_img comment1_imgsrc1 br-l"></div>
                             <div class="card-body bg-warning">
-                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                                <h4>用餐氣氛非常好，很適合朋友間聚會聊天，更適合喜愛特色裝潢的食客們，白天透明採光下店內別有一番風味~</h4>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="w-100">
-                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+                        <div>
+                            <div class="comment_img comment1_imgsrc2 br-l"></div>
                             <div class="card-body bg-warning">
-                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                                <h4>環境非常舒服，座位也很舒適，就算不是來用餐，來這裡喝杯咖啡聊聊天也很棒，很喜歡這種用餐環境！</h4>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="w-100">
-                            <img src="./img/comment/comment-3.jpg" alt="" class="img-fluid br-l ">
+                        <div>
+                            <div class="comment_img comment1_imgsrc3 br-l"></div>
                             <div class="card-body bg-warning">
-                                <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                                <h4>不僅外觀美麗新穎，連餐點也都是用心到不行的優質好店，這次新推出的菜色看起來都非常厲害，趕快來試試吧。</h4>
                             </div>
                         </div>
                     </div>
-
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="comment_img comment1_imgsrc4 br-l"></div>
+                            <div class="card-body bg-warning">
+                                <h4>明亮舒適的空間，讓人可以很享受在這裡的時光，餐點的美味度也很夠，不管是義大利麵還是鬆餅都蠻好吃的！</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="comment_img comment1_imgsrc5 br-l"></div>
+                            <div class="card-body bg-warning">
+                                <h4>木門咖啡的餐點漂亮卻不失美味，幾乎是每道菜都很喜歡，用餐環境更是寬敞舒適明亮，而且還免收服務費！</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="comment_img comment1_imgsrc6 br-l"></div>
+                            <div class="card-body bg-warning">
+                                <h4>東西好吃~而且店員都很親切，會過來詢問是否有合口味，或是有什麼需要改進的地方，感覺上還蠻不賴的哦!</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
@@ -511,7 +534,7 @@
                 </div>
                 <div class="col-gold-sm px-5 py-4 px-xl-5 d-flex flex-column justify-content-between"
                     style="background-color: burlywood;">
-                    <div class="text d-flex flex-column m-auto">
+                    <div class="text d-lg-flex flex-column m-auto d-none">
                         <h3 class="d-flex align-items-center" style="letter-spacing: 5px;">
                             <img class="icon" src="./img/icon-facebook.png" alt="FB">
                             <div class="icon_text">
@@ -673,7 +696,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
+    
+    
     <!-- 插入解鎖套件 -->
     <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
     <!-- 匯入自己寫的 JS -->

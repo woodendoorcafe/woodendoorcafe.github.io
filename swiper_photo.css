@@ -1,0 +1,79 @@
+
+
+#banner .banner_imgsrc1{
+    background-image: url("./img/PC/banner/banner_1.jpg");
+}
+#banner .banner_imgsrc2{
+    background-image: url("./img/PC/banner/banner_2.jpg");
+}
+#banner .banner_imgsrc3{
+    background-image: url("./img/PC/banner/banner_3.jpg");
+}
+#banner .banner_imgsrc4{
+    background-image: url("./img/PC/banner/banner_4.jpg");
+}
+#banner .banner_imgsrc5{
+    background-image: url("./img/PC/banner/banner_5.jpg");
+}
+
+
+#space .space_imgsrc1{
+    background-image: url("./img/PC/space/space_1.jpg");
+}
+#space .space_imgsrc2{
+    background-image: url("./img/PC/space/space_2.jpg");
+}
+#space .space_imgsrc3{
+    background-image: url("./img/PC/space/space_3.jpg");
+}
+#space .space_imgsrc4{
+    background-image: url("./img/PC/space/space_4.jpg");
+}
+#space .space_imgsrc5{
+    background-image: url("./img/PC/space/space_5.jpg");
+}
+#space .space_imgsrc6{
+    background-image: url("./img/PC/space/space_6.jpg");
+}
+
+
+#food .special_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .special_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+#food .cafe_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .cafe_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+#food .tea_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .tea_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+#food .brunch_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .brunch_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+#food .meal_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .meal_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+#food .dessert_imgsrc1{
+    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+}
+#food .dessert_imgsrc2{
+    background-image: url("./img/PC/food/food_dessert_1.jpg");
+}
+
+#comment .comment1_imgsrc1{
+    background-image: url("./img/PC/comment/comment_1.jpg");   
+}

@@ -10,6 +10,11 @@ body {
     /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
     padding-top: 96px;
 }
+@media(max-width: 800px){
+    .pt-96{
+        padding-top: 30px;
+    }
+}
 .mb-96{
     margin-bottom: 96px;
 }
@@ -134,13 +139,18 @@ section#about .col-4{
     right: 30px;
     top: calc(50% - 108px);
 }
-
+@media(max-width: 768px){
+    section#about .col-4{
+        position: absolute;
+        right:45px;
+        top: calc(50% - 146px);
+    }
+}
 @media(max-width: 400px){
    
     section#about .col-4{
         right: 67px;
     }
-
 }
 
 /* 一探方隅 */
@@ -161,6 +171,26 @@ section#space .container .row {
 
 #space .container .row {
     background-color: #8ff7f733;
+}
+#slideshowHolder {
+    width:680px;
+    height:500px;
+    overflow:hidden;
+  }
+  
+@media(max-width: 576px){
+    #space .swiper-wrapper, #space .swiper-slide{
+        height: 300px;
+    }
+    #space .pt-80{
+    padding: 0;
+}
+#space .py-5{
+    padding-bottom: 20px !important;
+}
+/* #space .px-5{
+    padding: 20px !important;
+} */
 }
 
 
@@ -188,7 +218,7 @@ section#food [class*=col-] {
 }
 
 
-
+/* 
 .food:hover {
     display: flex;
     justify-content: center;
@@ -213,7 +243,7 @@ section#food [class*=col-] {
 
 .food.card-img-overlay:hover p {
     display: inline;
-}
+} */
 
 
 section#food .swiper-container {
@@ -242,7 +272,7 @@ section#food span {
     width: 100%;
     height: 100%;
 }
-.aaa{
+.pc_span_font{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,10 +280,9 @@ section#food span {
     color: #ffffff;
     font-size: 32pt;
     font-family: '微軟正黑體';
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
-.bbb{
+.mobile_span{
     display: none;
 }
 .span-light {
@@ -269,6 +298,17 @@ section#comment [class*=col-] {
     /* 針對 section#comment 裡的有col開頭的class的設定 */
     padding-right: 25px;
     padding-left: 25px;
+}
+#comment .comment_img{
+    width: 100%;
+    height: 255px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#comment .swiper-container{
+    width: 80%;
 }
 /* 線上聯繫 */
 #contact #Select_adult, #Select_child {
@@ -288,9 +328,19 @@ section#comment [class*=col-] {
     padding-right: 13rem;
 }
 
+
 @media(max-width: 800px){
-    #contact .pr-8{
+    
+   #contact .pr-8{
         padding-right: 3rem;
+    }    
+}
+@media(max-width: 400px){
+     #contact .pl-5{
+        padding-left: 0 !important;
+    }
+    #contact .pr-8{
+        padding-right: 0 !important;
     }
 }
 #contact .ml-n-2{

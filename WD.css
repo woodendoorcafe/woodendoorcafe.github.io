@@ -12,7 +12,7 @@ body {
 }
 @media(max-width: 800px){
     .pt-96{
-        padding-top: 30px;
+        padding-top: 35px;
     }
 }
 .mb-96{
@@ -166,7 +166,15 @@ section#space .container .row {
     margin-left: 0;
     margin-right: 0;
 }
-
+@media(max-width:400px){
+    #space .swiper-container{
+        margin-bottom: 5px;
+    }
+    #space .col-gold-sm{
+        width: 80%;
+        margin: 10px auto;
+    }
+}
     /* 姿樺的 */
 
 #space .container .row {
@@ -186,7 +194,7 @@ section#space .container .row {
     padding: 0;
 }
 #space .py-5{
-    padding-bottom: 20px !important;
+    padding: 20px 30px !important;
 }
 /* #space .px-5{
     padding: 20px !important;
@@ -246,25 +254,22 @@ section#food [class*=col-] {
 } */
 
 
-section#food .swiper-container {
+#food .swiper-container {
     width: 100%;
     height: 400px;
 }
 
-@media (max-width: 576px){
-    section#food .swiper-container {
-        height: 230px;
-    }
-   
-}
-
 @media (max-width: 800px){
-    section#food .swiper-container {
+    #food .swiper-container {
         height: 290px;
     }
 }
-
-section#food .swiper-slide {
+@media (max-width: 576px){
+    #food .swiper-container{
+        height: 145px;
+    }
+}
+#food .swiper-slide {
     background-position: center;
     background-size: cover;
 }
@@ -336,11 +341,20 @@ section#comment [class*=col-] {
     }    
 }
 @media(max-width: 400px){
-     #contact .pl-5{
-        padding-left: 0 !important;
+     #contact .col-gold-lg{
+        padding: 10px 0 !important;
     }
-    #contact .pr-8{
-        padding-right: 0 !important;
+    #contact iframe{
+        height: 350px;
+    }
+    #contact .ml-n-2{
+        margin-left: -35px !important;
+    }
+    #contact .form-text{
+        padding: 0 25px;
+    }
+    #contact .col-gold-sm{
+        padding:0  20px 10px 20px !important;
     }
 }
 #contact .ml-n-2{

@@ -330,7 +330,7 @@ section#comment [class*=col-] {
 }
 
 #contact .traffic .col-gold-sm.pr-13{
-    padding-right: 13rem;
+    padding: 13px;
 }
 
 
@@ -342,7 +342,7 @@ section#comment [class*=col-] {
 }
 @media(max-width: 400px){
      #contact .col-gold-lg{
-        padding: 10px 0 !important;
+        padding: 10px 20px !important;
     }
     #contact iframe{
         height: 350px;
@@ -351,10 +351,11 @@ section#comment [class*=col-] {
         margin-left: -35px !important;
     }
     #contact .form-text{
-        padding: 0 25px;
+        padding: 0 5px;
     }
     #contact .col-gold-sm{
         padding:0  20px 10px 20px !important;
+        text-align: center;
     }
 }
 #contact .ml-n-2{
@@ -423,3 +424,6 @@ section#comment [class*=col-] {
    border-bottom: 2px rgb(139, 133, 125)  dotted ;
 }
 /* Footer */
+footer .text-right{
+    text-align: center !important;
+}

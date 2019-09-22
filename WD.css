@@ -97,9 +97,9 @@ nav .navbar-collapse{
 }
 
 @media(max-width: 768px){
-    .navbar-light .navbar-brand {
-        margin: 0 calc(50vw - 148px) 0 auto;
-    }
+    /* .navbar-light .navbar-brand {
+        margin: 0 calc(50vw - 126.5px) 0 auto;
+    } */
     nav .navbar-collapse{
         height: calc(100vh - 80px);
     }
@@ -175,7 +175,10 @@ section#space .container .row {
         margin: 10px auto;
     }
 }
-    /* 姿樺的 */
+
+
+
+/* 姿樺的 */
 
 #space .container .row {
     background-color: #8ff7f733;
@@ -196,6 +199,8 @@ section#space .container .row {
 #space .py-5{
     padding: 20px 30px !important;
 }
+
+
 /* #space .px-5{
     padding: 20px !important;
 } */
@@ -355,6 +360,12 @@ section#comment [class*=col-] {
     }
     #contact .col-gold-sm{
         padding:0  20px 10px 20px !important;
+        
+    }
+    #contact .traffic .col-gold-sm.pr-13{
+        padding: 0 80px !important;
+    }
+    #contract small{
         text-align: center;
     }
 }
@@ -424,6 +435,6 @@ section#comment [class*=col-] {
    border-bottom: 2px rgb(139, 133, 125)  dotted ;
 }
 /* Footer */
-footer .text-right{
+footer small{
     text-align: center !important;
 }

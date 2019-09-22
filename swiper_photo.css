@@ -38,40 +38,40 @@
 
 
 #food .special_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/Food_special.jpg");
 }
 #food .special_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("./img/PC/food/Food_special.jpg");
 }
 #food .cafe_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/food_cafe.jpg");
 }
 #food .cafe_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("./img/PC/food/food_cafe.jpg");
 }
 #food .tea_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/food_\ tea.png");
 }
 #food .tea_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("./img/PC/food/food_\ tea.png");
 }
 #food .brunch_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/food_brunch.jpg");
 }
 #food .brunch_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("./img/PC/food/food_brunch.jpg");
 }
 #food .meal_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/food_meal.jpg");
 }
 #food .meal_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("./img/PC/food/food_meal.jpg");
 }
 #food .dessert_imgsrc1{
-    background-image: url("./img/PC/food/Food_cafe_1.jpg");
+    background-image: url("./img/PC/food/food_dessert.jpg");
 }
 #food .dessert_imgsrc2{
-    background-image: url("./img/PC/food/food_dessert_1.jpg");
+    background-image: url("../img/PC/food/food_dessert.jpg");
 }
 
 #comment .comment1_imgsrc1{

@@ -25,7 +25,12 @@ var swiper = new Swiper('section#space .swiper-container', {
     },
 });
 // 憲賣效果
-
+$(function(){
+	window.myFlux = new flux.zip('#slider', {
+		autoplay: true,
+		pagination: true
+	});
+});
 
 
 

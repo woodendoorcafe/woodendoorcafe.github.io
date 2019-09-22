@@ -1,8 +1,35 @@
 
+// NAV 滑動變色
+$(window).scroll(function (evt) {
+    // 判斷滑動高度 navbar-top已經加class了,所以不需.句號
+    if ($(window).scrollTop() > 345)
+        $(".navbar").removeClass("navbar-top")
+    else
+        $(".navbar").addClass("navbar-top")
+});
+
+// skrollr初始化設定
+var s = skrollr.init();
+
+
+// // 漢堡條展開後，點連結會收合
+// $(window).scroll(function () {
+//     //小屏幕下的導航條折疊
+//     if ($(window).width() < 768) {
+//         //點擊導航鏈接之後，把導航選項折疊起來
+//         $(".navbar a").click(function () {
+//             $(".navbar").collapse('hide');
+//         });
+//         //滾動屏幕時，把導航選項折疊起來
+//         $(window).scroll(function () {
+//             $(".navbar").collapse('hide');
+//         });
+//     }
+// });
 
 
 // <!-- Swiper-banner -->
-    var swiper = new Swiper('section#banner .swiper-container', {
+var swiper = new Swiper('section#banner .swiper-container', {
     loop: true,
     slidesPerView: 'auto',
     pagination: {
@@ -25,11 +52,11 @@ var swiper = new Swiper('section#space .swiper-container', {
     },
 });
 // 憲賣效果
-$(function(){
-	window.myFlux = new flux.zip('#slider', {
-		autoplay: true,
-		pagination: true
-	});
+$(function () {
+    window.myFlux = new flux.zip('#slider', {
+        autoplay: true,
+        pagination: true
+    });
 });
 
 
@@ -49,7 +76,7 @@ var myswiper = new Swiper('section#food .swiper-container', {
     // 自動撥放
     speed: 2000,
     autoplay: {
-        delay:1000,
+        delay: 1000,
         stopOnLastSlide: false,
         disableOnInteraction: true,
     },
@@ -68,121 +95,121 @@ var myswiper = new Swiper('section#food .swiper-container', {
     },
 });
 
-    // swiper-food 的 氣死人的 hover
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameA").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-light">特調</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+// swiper-food 的 氣死人的 hover
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameA").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-light">特調</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameA").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameB").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-dark">咖啡</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+} else {
+    $("#food .swiper-slide.nameA").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameB").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-dark">咖啡</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameB").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameC").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-light">茶飲</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+} else {
+    $("#food .swiper-slide.nameB").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameC").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-light">茶飲</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameC").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameD").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-dark">輕食</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+} else {
+    $("#food .swiper-slide.nameC").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameD").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-dark">輕食</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameD").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };    
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameE").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-light">主食</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+} else {
+    $("#food .swiper-slide.nameD").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameE").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-light">主食</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameE").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };
-    var www = document.querySelector("#food").clientWidth;
-    if (www > 768) {
-        $("#food .swiper-slide.nameF").hover(
-            function () {
-                $(this).append('<span class="pc_span_font span-dark">甜點</span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
+} else {
+    $("#food .swiper-slide.nameE").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
+var www = document.querySelector("#food").clientWidth;
+if (www > 768) {
+    $("#food .swiper-slide.nameF").hover(
+        function () {
+            $(this).append('<span class="pc_span_font span-dark">甜點</span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
 
-    } else {
-        $("#food .swiper-slide.nameF").hover(
-            function () {
-                $(this).append('<span class=".mobile_span"></span>');
-            }, function () {
-                $(this).find("span").last().remove();
-            }
-        );
-    };
+} else {
+    $("#food .swiper-slide.nameF").hover(
+        function () {
+            $(this).append('<span class=".mobile_span"></span>');
+        }, function () {
+            $(this).find("span").last().remove();
+        }
+    );
+};
 // <!-- swiper-comment -->
 
 var swiper = new Swiper('section#comment .swiper-container', {
@@ -202,7 +229,7 @@ var swiper = new Swiper('section#comment .swiper-container', {
 var locked;
 window.onload = function () {
     slide();
-    
+
 }
 window.onresize = function () {
     if (locked == true) {
@@ -248,7 +275,7 @@ function slide() {
                 objX = slideBoxWidth;
                 locked = true;
                 $('.slide_xbox').html('驗證通過<div class="lock_btn"><i class="iconfont icon-xuanzhong"></i></div>');
-                
+
             }
             $('.slide_xbox').width(objX + 'px');
             document.onmousemove = null;

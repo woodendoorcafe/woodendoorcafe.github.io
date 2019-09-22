@@ -16,13 +16,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
         integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 
-    <!-- Link Swiper's CSS -->
+    <!-- Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <!-- lightcase CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css">
 
     <link rel="stylesheet" href="WD.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="swiper_photo.css">
-    
+
 
 
     <title>木門咖啡</title>
@@ -34,7 +37,7 @@
 
     <!-- NAV 不動 -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-top-bg">
         <div class="container d-flex align-items-md-end">
             <a class="navbar-brand" href="#banner">
                 <img src="./img/logo_gray90.png" class="d-inline-block align-top" alt="木門咖啡">
@@ -42,7 +45,7 @@
                 <h1 class="d-none">木門咖啡</h1>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navToggler"
                 aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -92,40 +95,6 @@
             <div class="swiper-button-prev px-lg-5"></div>
         </div>
     </section>
-
-    <!-- NAV 導覽列 黏住 -->
-    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #fdece3;">
-        <div class="container d-flex align-items-end">
-            <a class="navbar-brand" href="#banner">
-                <img src="./img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle" alt="木門咖啡">
-                logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
-                aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navToggler">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">初次相遇</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#space">一探方隅</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#food">淺嘗美味</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#comment">佳評如潮</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">線上聯繫</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
     <!-- 初次相遇 -->
     <section id="about" class="pt-96">
@@ -217,17 +186,16 @@
             <div class="row pt-80">
                 <div class="col-gold-lg d-md-flex d-none">
                     <div id="slider" class="row w-100 ">
-                        <div class="col d-sm-flex justify-content-end align-items-end d-none w-100 swiper-img"
-                            style="height: 500px; background-image: url('./img/PC/space/space2_1.jpg');
+                        <div class="col d-sm-flex justify-content-end align-items-end d-none w-100 swiper-img" style="height: 500px; background-image: url('./img/PC/space/space2_1.jpg');
                             ">
                             <!-- <img class="w-100" src="./img/PC/space/space2_1.jpg" alt="">
                             <img class="w-100" src="./img/PC/space/space2_2.jpg" alt="">
                             <img class="w-100" src="./img/PC/space/space2_3.jpg" alt=""> -->
                             <div class="TID">2017商業空間類餐飲空間TID獎</div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-               
+
                 <div class="col-gold-sm px-5 py-5 bg-light">
                     <h2 class="text-center">空間設計概念</h2>
                     <h4>以「自然」「舒適」為主軸，運用切割天窗引入光線，減少人工照明的同時，落實環保節能的永續精神，而空間產生無限延伸的奇幻感受，側牆富含生命力的植生牆面讓植栽在溫煦的陽光下，充分進行光合作用，人與植物即便在室內也能享受日光帶來的溫暖，形塑木門咖啡的風格意象。
@@ -250,14 +218,18 @@
             <div class="row px-15">
                 <div class="col-md-4 col-6 col-6">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide meal_imgsrc1 nameE" data-swiper-autoplay="1600">
+                        <a href="./img/PC/food/menu_1.jpg" data-rel="lightcase:myCollection"
+                            data-lc-categories="myCategory1 myCategory2">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide meal_imgsrc1 nameE" data-swiper-autoplay="1600"> </div>
+                                <div class="swiper-slide meal_imgsrc2 nameE" data-swiper-autoplay="1600">
+                                </div>
                             </div>
-                            <div class="swiper-slide meal_imgsrc2 nameE" data-swiper-autoplay="1600">
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">主食</p>
+
                 </div>
 
                 <div class="col-md-4 col-6">
@@ -306,8 +278,8 @@
                         </div>
                     </div>
                     <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">茶飲</p>
-                </div>            
-                
+                </div>
+
                 <div class="col-md-4 col-6">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -372,64 +344,68 @@
                         <h4>東西好吃~而且店員都很親切，會過來詢問是否有合口味，或是有什麼需要改進的地方，感覺上還蠻不賴的哦!</h4>
                     </div>
                 </div>
-                
+
             </div>
 
             <!-- 手機版 是 swiper -->
-            <div class="swiper-container d-lg-none d-sm-flex d-block align-items-center mb-3">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc1 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>用餐氣氛非常好，很適合朋友間聚會聊天，更適合喜愛特色裝潢的食客們，白天透明採光下店內別有一番風味~</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="swiper-container d-lg-none d-sm-flex d-block align-items-center">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc1 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>用餐氣氛非常好，很適合朋友間聚會聊天，更適合喜愛特色裝潢的食客們，白天透明採光下店內別有一番風味~</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc2 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>環境非常舒服，座位也很舒適，就算不是來用餐，來這裡喝杯咖啡聊聊天也很棒，很喜歡這種用餐環境！</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc3 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>不僅外觀美麗新穎，連餐點也都是用心到不行的優質好店，這次新推出的菜色看起來都非常厲害，趕快來試試吧。</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc4 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>明亮舒適的空間，讓人可以很享受在這裡的時光，餐點的美味度也很夠，不管是義大利麵還是鬆餅都蠻好吃的！</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc5 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>木門咖啡的餐點漂亮卻不失美味，幾乎是每道菜都很喜歡，用餐環境更是寬敞舒適明亮，而且還免收服務費！</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide px-5">
+                                <div>
+                                    <div class="comment_img comment1_imgsrc6 br-l"></div>
+                                    <div class="card-body bg-warning">
+                                        <h4>東西好吃~而且店員都很親切，會過來詢問是否有合口味，或是有什麼需要改進的地方，感覺上還蠻不賴的哦!</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc2 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>環境非常舒服，座位也很舒適，就算不是來用餐，來這裡喝杯咖啡聊聊天也很棒，很喜歡這種用餐環境！</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc3 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>不僅外觀美麗新穎，連餐點也都是用心到不行的優質好店，這次新推出的菜色看起來都非常厲害，趕快來試試吧。</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc4 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>明亮舒適的空間，讓人可以很享受在這裡的時光，餐點的美味度也很夠，不管是義大利麵還是鬆餅都蠻好吃的！</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc5 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>木門咖啡的餐點漂亮卻不失美味，幾乎是每道菜都很喜歡，用餐環境更是寬敞舒適明亮，而且還免收服務費！</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <div class="comment_img comment1_imgsrc6 br-l"></div>
-                            <div class="card-body bg-warning">
-                                <h4>東西好吃~而且店員都很親切，會過來詢問是否有合口味，或是有什麼需要改進的地方，感覺上還蠻不賴的哦!</h4>
-                            </div>
-                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next ml-5"></div>
+                        <div class="swiper-button-prev mr-2"></div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -704,8 +680,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    
-    
+
+
     <!-- 插入解鎖套件 -->
     <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
     <!-- 匯入自己寫的 JS -->
@@ -713,6 +689,9 @@
 
     <!-- 瀑布流 masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- lightcase js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.min.js"></script>
 </body>
 
 </html>

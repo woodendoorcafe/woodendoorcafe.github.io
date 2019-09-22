@@ -1,4 +1,5 @@
 
+
 // NAV 滑動變色
 $(window).scroll(function (evt) {
     // 判斷滑動高度 navbar-top已經加class了,所以不需.句號
@@ -9,24 +10,26 @@ $(window).scroll(function (evt) {
 });
 
 // skrollr初始化設定
-var s = skrollr.init();
+// var s = skrollr.init();
+// 跟swper衝突
 
 
-// // 漢堡條展開後，點連結會收合
-// $(window).scroll(function () {
-//     //小屏幕下的導航條折疊
-//     if ($(window).width() < 768) {
-//         //點擊導航鏈接之後，把導航選項折疊起來
-//         $(".navbar a").click(function () {
-//             $(".navbar").collapse('hide');
-//         });
-//         //滾動屏幕時，把導航選項折疊起來
-//         $(window).scroll(function () {
-//             $(".navbar").collapse('hide');
-//         });
-//     }
-// });
-
+// 漢堡條展開後，點連結會收合
+$(window).scroll(function () {
+    //小屏幕下的導航條折疊
+    if ($(window).width() < 768) {
+        //點擊導航鏈接之後，把導航選項折疊起來
+        $(".navbar-collapse a").click(function () {
+            $(".navbar-collapse").removeClass('show');
+            $(".navbar-collapse").addClass('hide');
+        });
+        //滾動屏幕時，把導航選項折疊起來
+        $(window).scroll(function () {
+            $(".navbar-collapse").removeClass('show');
+            $(".navbar-collapse").addClass('hide');
+        });
+    }
+});
 
 // <!-- Swiper-banner -->
 var swiper = new Swiper('section#banner .swiper-container', {
@@ -52,14 +55,15 @@ var swiper = new Swiper('section#space .swiper-container', {
     },
 });
 // 憲賣效果
-$(function () {
-    window.myFlux = new flux.zip('#slider', {
-        autoplay: true,
-        pagination: true
-    });
-});
+// 不能用background，要用img
+if (!flux.browser.supportsTransitions)
 
-
+        window.f = new flux.slider('#space-slider', {
+            pagination: false,
+            controls: false,
+            transitions: ['zip'],
+            autoplay: true,
+        });
 
 
 
@@ -94,6 +98,12 @@ var myswiper = new Swiper('section#food .swiper-container', {
         // shadowScale: 0.94,
     },
 });
+
+// 燈箱效果 lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 
 // swiper-food 的 氣死人的 hover
 var www = document.querySelector("#food").clientWidth;

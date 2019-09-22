@@ -314,6 +314,10 @@ section#food span {
     background-color: #5a1d0b36;
 }
 
+section#food .row a{
+    text-decoration-line: none;
+}
+
 /* 佳評如潮 */
 section#comment [class*=col-] {
     /* 針對 section#comment 裡的有col開頭的class的設定 */

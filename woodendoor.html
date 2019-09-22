@@ -19,8 +19,8 @@
     <!-- Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
-    <!-- lightcase CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css">
+    <!-- lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
     <link rel="stylesheet" href="WD.css">
     <link rel="stylesheet" href="font.css">
@@ -163,8 +163,9 @@
                 <h5>踏進悠閑舒適的一隅</h5>
             </div>
             <!-- 一探方隅的輪播 -->
+
             <!-- Swiper -->
-            <div class="swiper-container">
+            <!-- <div class="swiper-container">
                 <div class="swiper-wrapper w-100 h-space">
                     <div class="swiper-slide swiper-img space_imgsrc1">
                     </div>
@@ -178,10 +179,22 @@
                     </div>
                     <div class="swiper-slide swiper-img space_imgsrc6">
                     </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                </div> -->
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div>
+            </div> -->
+
+            <!-- slider-zip (憲賣效果) -->
+            <div id="space-slider" class="swiper-container w-100">
+                <img src="./img/PC/space/space_1.jpg" alt="" />
+                <img src="./img/PC/space/space_2.jpg" alt="" />
+                <img src="./img/PC/space/space_3.jpg" alt="" />
+                <img src="./img/PC/space/space_4.jpg" alt="" />
+                <img src="./img/PC/space/space_5.jpg" alt="" />
+                <img src="./img/PC/space/space_6.jpg" alt="" />
             </div>
+
+
             <!-- 一探方隅的空間設計概念 -->
             <div class="row pt-80">
                 <div class="col-gold-lg d-md-flex d-none">
@@ -217,31 +230,29 @@
             <!-- swiper-cube-food -->
             <div class="row px-15">
                 <div class="col-md-4 col-6 col-6">
-                    <div class="swiper-container">
-                        <a href="./img/PC/food/menu_1.jpg" data-rel="lightcase:myCollection"
-                            data-lc-categories="myCategory1 myCategory2">
+                    <a href="./img/PC/food/menu_2.jpg" data-toggle="lightbox" data-gallery="gallery">
+                        <div class="swiper-container">
                             <div class="swiper-wrapper">
-
-                                <div class="swiper-slide meal_imgsrc1 nameE" data-swiper-autoplay="1600"> </div>
-                                <div class="swiper-slide meal_imgsrc2 nameE" data-swiper-autoplay="1600">
-                                </div>
+                                <div class="swiper-slide meal_imgsrc1 nameE" data-swiper-autoplay="1600"></div>
+                                <div class="swiper-slide meal_imgsrc2 nameE" data-swiper-autoplay="1600"></div>
                             </div>
-                        </a>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">主食</p>
-
+                        </div>
+                        <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">主食</p>
+                    </a>
                 </div>
 
                 <div class="col-md-4 col-6">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide brunch_imgsrc1 nameD" data-swiper-autoplay="1500">
-                            </div>
-                            <div class="swiper-slide brunch_imgsrc2 nameD" data-swiper-autoplay="1500">
+                    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide brunch_imgsrc1 nameD" data-swiper-autoplay="1500">
+                                </div>
+                                <div class="swiper-slide brunch_imgsrc2 nameD" data-swiper-autoplay="1500">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">輕食</p>
+                        <p class="bg-warning p-2 d-lg-none d-sm-flex d-block">輕食</p>
+                    </a>
                 </div>
 
                 <div class="col-md-4 col-6">
@@ -675,6 +686,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+    <!-- lightbox js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
     <!-- Flux Slider -->
     <script src="flux.min.js"></script>
 
@@ -684,14 +699,16 @@
 
     <!-- 插入解鎖套件 -->
     <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
+    
     <!-- 匯入自己寫的 JS -->
     <script src="WD.js"></script>
 
     <!-- 瀑布流 masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-    <!-- lightcase js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.min.js"></script>
+
+
+
 </body>
 
 </html>

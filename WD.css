@@ -236,7 +236,7 @@ section#food [class*=col-] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: #808080;
     font-size: 32pt;
     font-family: '微軟正黑體';
     font-weight: bold;

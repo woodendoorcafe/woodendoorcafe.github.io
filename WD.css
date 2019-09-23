@@ -186,18 +186,14 @@ section#space .container .row {
     }
 }
 
-
-
-/* 姿樺的 */
+#space .col-gold-lg {
+    position: relative;
+}
 
 #space .container .row {
     background-color: #8ff7f733;
 }
-#slideshowHolder {
-    width:680px;
-    height:500px;
-    overflow:hidden;
-  }
+
   
 @media(max-width: 576px){
     #space .swiper-wrapper, #space .swiper-slide{
@@ -241,7 +237,7 @@ section#food [class*=col-] {
 }
 
 
-/* 
+
 .food:hover {
     display: flex;
     justify-content: center;
@@ -253,11 +249,11 @@ section#food [class*=col-] {
 }
 
 .rgba-light:hover {
-    background-color: #5a270b62;
+    background-color: #0b5a1236;
 }
 
 .rgba-dark:hover {
-    background-color: #5a270ba4;
+    background-color: #5a1d0b36;
 }
 
 .food.card-img-overlay p {
@@ -266,24 +262,12 @@ section#food [class*=col-] {
 
 .food.card-img-overlay:hover p {
     display: inline;
-} */
-
-
-#food .swiper-container {
-    width: 100%;
-    height: 400px;
 }
 
-@media (max-width: 800px){
-    #food .swiper-container {
-        height: 290px;
-    }
+section#food .row a{
+    text-decoration-line: none;
 }
-@media (max-width: 576px){
-    #food .swiper-container{
-        height: 145px;
-    }
-}
+/* 
 #food .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -312,11 +296,9 @@ section#food span {
 
 .span-dark {
     background-color: #5a1d0b36;
-}
+} */
 
-section#food .row a{
-    text-decoration-line: none;
-}
+
 
 /* 佳評如潮 */
 section#comment [class*=col-] {

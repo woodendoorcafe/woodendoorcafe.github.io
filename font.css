@@ -5,7 +5,7 @@ body{
     font-weight:700;
 }
 nav #navToggler a,p {
-    font-size: 22px;
+    font-size: 19px;
     padding: 0;
     margin: 0;
 }
@@ -41,8 +41,13 @@ h5{
     padding: 30px;    
 } 
 #about .row div h3{
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 400;
+}
+
+#about .row div h5{
+    font-size: 14px;
+    color: blueviolet;
 }
 
 #space .col-gold-sm h2{
@@ -72,8 +77,18 @@ h5{
 }
 
 #comment h4{
-    font-weight:100 !important;letter-spacing: 4px ;
+    font-size: 20px;
+    font-weight:500 !important;
+    font-family: '微軟正黑體';
+    letter-spacing: 4.2px;
+    margin-left: 14.5px;
 }
+#comment .masonry a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
 
 #contact h3{
     margin: 15px 0;
@@ -102,6 +117,7 @@ h5{
 }
 footer .pt{
     font-size:20px;
+    margin-bottom: 20px;
 }
 footer .text-right{
     font-size:19px;
@@ -110,6 +126,12 @@ footer .text-right{
 @media(max-width: 768px){
     #about .row div h4{
         width: 224px;
+    }
+    #about .row div h3{
+        font-size: 15px;
+    }
+    #about .row div h5{
+        font-size: 9px;
     }
     footer .text-right{
         text-align: center !important;
@@ -132,11 +154,9 @@ footer .text-right{
     } */
     
     #about .row div h5{
-        font-size: 12px;
+        font-size: 7px;
     }
-    #about .row div h3{
-        font-size: 15px;
-    }
+    
 
     #about .row div h4{
         width: 150px;

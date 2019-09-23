@@ -128,7 +128,7 @@ nav.navbar {
 
 /* 初次相遇 */
 section#about .m-n-about1 {
-    margin: 5rem 0 -6rem -10rem;
+    margin: 5rem 0 -15rem -5.7rem
 }
 section#about .m-n-about2 {
     margin: 0rem 0rem -19rem -51rem;
@@ -136,6 +136,13 @@ section#about .m-n-about2 {
 section#about .m-n-about3 {
     margin: -13.5rem 0 -4.5rem -3rem;
 }
+section#about .m-n-about4 {
+    margin: -13.5rem 0 -3.3rem 15.7rem;
+}
+section#about .m-n-about5 {
+    margin: -20.5rem -4.5rem -5.5rem 14rem;
+}
+
 section#about .row {
     /* 手機板使用 */
     /* margin: -18rem 0rem 0rem 0rem; */

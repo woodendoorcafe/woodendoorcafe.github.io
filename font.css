@@ -56,7 +56,7 @@ h5{
 }
 #space .col-gold-sm h4{
     font-size: 20px;
-    line-height: 1.9;
+    line-height: 1.64;
     letter-spacing: 1.9px;
     margin-left: 10px;
     font-family: '微軟正黑體', 'sans-serif';
@@ -107,6 +107,9 @@ footer .text-right{
 @media(max-width: 768px){
     #about .row div h4{
         width: 224px;
+    }
+    footer .text-right{
+        text-align: center !important;
     }
 
 }
@@ -181,6 +184,7 @@ footer .text-right{
     footer .pt{
         font-size:16px;
         padding-top:10px; 
+        text-align: center;
     }
     footer .text-right{
         font-size:14px;

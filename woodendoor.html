@@ -165,7 +165,7 @@
             <!-- 一探方隅的輪播 -->
 
             <!-- Swiper -->
-            <!-- <div class="swiper-container">
+            <div class="swiper-container">
                 <div class="swiper-wrapper w-100 h-space">
                     <div class="swiper-slide swiper-img space_imgsrc1">
                     </div>
@@ -179,34 +179,30 @@
                     </div>
                     <div class="swiper-slide swiper-img space_imgsrc6">
                     </div>
-                </div> -->
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div>
-            </div> -->
-
-            <!-- slider-zip (憲賣效果) -->
-            <div id="space-slider" class="swiper-container w-100">
-                <img src="./img/PC/space/space_1.jpg" alt="" />
-                <img src="./img/PC/space/space_2.jpg" alt="" />
-                <img src="./img/PC/space/space_3.jpg" alt="" />
-                <img src="./img/PC/space/space_4.jpg" alt="" />
-                <img src="./img/PC/space/space_5.jpg" alt="" />
-                <img src="./img/PC/space/space_6.jpg" alt="" />
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
+
+
 
 
             <!-- 一探方隅的空間設計概念 -->
             <div class="row pt-80">
                 <div class="col-gold-lg d-md-flex d-none">
-                    <div id="slider" class="row w-100 ">
-                        <div class="col d-sm-flex justify-content-end align-items-end d-none w-100 swiper-img" style="height: 500px; background-image: url('./img/PC/space/space2_1.jpg');
-                            ">
+                    
+                        <!-- slider-zip (憲賣效果) -->
+                        <div id="space-slider" class="d-sm-flex d-none w-100 swiper-img">
+                            <img class="w-100" src="./img/PC/space/space2_1.jpg" alt="" />
+                            <img class="w-100" src="./img/PC/space/space2_2.jpg" alt="" />
+                            <img class="w-100" src="./img/PC/space/space2_3.jpg" alt="" />
+
                             <!-- <img class="w-100" src="./img/PC/space/space2_1.jpg" alt="">
                             <img class="w-100" src="./img/PC/space/space2_2.jpg" alt="">
                             <img class="w-100" src="./img/PC/space/space2_3.jpg" alt=""> -->
-                            <div class="TID">2017商業空間類餐飲空間TID獎</div>
+                            <!-- <div class="TID">2017商業空間類餐飲空間TID獎</div> -->
                         </div>
-                    </div>
+                    
                 </div>
 
                 <div class="col-gold-sm px-5 py-5 bg-light">
@@ -556,7 +552,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-12 mx-auto my-5">
+                <div class="col-lg-11 col-12 mx-auto my-5">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3640.619896427926!2d120.6498197141588!3d24.149983384393938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1568401037998!5m2!1szh-TW!2stw"
                         width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -610,17 +606,20 @@
                     </div>
 
                 </div>
-                <div class="col-gold-sm pr-13">
-                    <div class="text_title pb-3">搭乘公車</div>
-                    <p class="parking ">
-                        東興大墩十二街口<br>70.70B.127
-                    </p>
-                    <p class="parking ">
-                        公益東興路口<br>27.72.81.107
-                    </p>
-                    <p class="">
-                        大墩十二街口<br>60
-                    </p>
+                <div class="col-gold-sm pr-13 bg-warning">
+                    <div class="text_title pb-3 text-md-center text-lg-left">搭乘公車</div>
+                    <div class="d-md-inline-block text-md-center text-lg-left">
+                        <p class="parking">
+                            東興大墩十二街口<br>70.70B.127
+                        </p>
+                        <p class="parking">
+                            公益東興路口<br>27.72.81.107
+                        </p>
+                        <p class="">
+                            大墩十二街口<br>60
+                        </p>
+                    </div>
+
                 </div>
             </div>
     </section>
@@ -632,37 +631,45 @@
                 <div class="col-md-4 col-6">
                     <div class="d-flex">
                         <img class="icon" src="./img/icon-facebook.png" alt="FB">
-                        <div class="icon_text" style="line-height: 34px; padding-left: 5px; ">
+                        <div class="icon_text" style="letter-spacing: 5px;">
                             木門咖啡
                         </div>
                     </div>
-                    <div class="d-flex mt-2">
+                    <div class="d-flex align-items-center mt-2">
                         <img class="icon" src="./img/icon-location.png" alt="address">
-                        <div class="icon_text" style="line-height: 34px; padding-left: 5px; ">
+                        <div class="icon_text d-md-block d-none">
                             台中市南屯區大墩十二街126號
                         </div>
+                        <div class="icon_text d-block d-md-none">
+                            <div style="letter-spacing: 3.75px; line-height: 17px;">
+                                台中市南屯區</div>
+                            <div style="letter-spacing: -0.7px; line-height: 17px;">
+                                大墩十二街126號
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="d-flex">
                         <img class="icon" src="./img/icon-phone.png" alt="phone">
-                        <div class="icon_text" style="line-height: 34px; padding-left: 5px; ">
+                        <div class="icon_text" style="letter-spacing: 1px;">
                             04-23298877
                         </div>
                     </div>
                     <div class="d-flex mt-2">
                         <img class="icon" src="./img/icon-time.png" alt="time">
-                        <div class="icon_text" style="line-height: 34px; padding-left: 5px; ">
+                        <div class="icon_text" style="letter-spacing: 2px;">
                             9:00 - 21:00
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row py-2">
-                <div class="col-md-7 col-12 sologn pt">
+                <div class="col-md-7 col-12 sologn pt text-md-center text-lg-left">
                     讓我們一起享受陽光，擁有舒適寧靜的慢活步調
                 </div>
-                <div class="col-md-5 col-10 text-right">
+                <div class="col-md-5 col-12 text-right">
                     <small>
                         本網站僅作教學用，如有侵權請告知<br>
                         Copyright © 2019 木門咖啡 ALL RIGHT RESERVED
@@ -699,7 +706,7 @@
 
     <!-- 插入解鎖套件 -->
     <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
-    
+
     <!-- 匯入自己寫的 JS -->
     <script src="WD.js"></script>
 

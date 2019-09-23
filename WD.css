@@ -36,7 +36,7 @@ body {
     background-color: #FFFFC8;
 }
 footer {
-    background-color: #b28252;
+    background-color: #594841;
 }
 @media (max-width: 1024px) {
 
@@ -236,7 +236,7 @@ section#food [class*=col-] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: antiquewhite;
     font-size: 32pt;
     font-family: '微軟正黑體';
     font-weight: bold;
@@ -432,7 +432,7 @@ section#comment [class*=col-] {
     line-height: 38px;    
 }
 .btn-block{
-    color: #ffffff;
+    color: antiquewhite;
     background-color: #5a443a;
 }
 

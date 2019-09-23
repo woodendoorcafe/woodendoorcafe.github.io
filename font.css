@@ -104,7 +104,7 @@ h5{
 }
 #contact p{
     font-size: 16px;
-    color: #808080;
+    color: #3e3a39;
     padding-left: 5px;
 }
 #contact .form-text{
@@ -146,6 +146,7 @@ footer .copy{
 @media(max-width: 768px){
     #about .row div h4{
         width: 224px;
+        
     }
     #about .row div h3{
         font-size: 15px;
@@ -182,7 +183,6 @@ footer .copy{
         font-size: 13px;
         line-height: 1.8;
         font-family: '微軟正黑體', 'sans-serif';
-        background-color:#8ef6f6bb;
         padding: 16px;    
     } 
     .swiper-container .TID {
@@ -216,6 +216,10 @@ footer .copy{
     }
     #contact .col-gold-sm h3{
         font-weight: 100;
+        color: antiquewhite;
+    }
+    #contact .col-gold-sm p{
+        color: antiquewhite;
     }
     #contact .text_title{
         font-size: 26px;
@@ -223,6 +227,7 @@ footer .copy{
     }
     #contact .traffic p{
         font-size: 19px;
+        color: #595757;
         line-height: 45px;
         margin: 0;
     }

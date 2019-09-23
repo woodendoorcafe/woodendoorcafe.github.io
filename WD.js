@@ -1,3 +1,8 @@
+// 燈箱效果 lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 
 
 // NAV 滑動變色
@@ -92,11 +97,6 @@ var myswiper = new Swiper('section#food .swiper-container', {
     },
 });
 
-// 燈箱效果 lightbox
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-  });
 
 // swiper-food 的 氣死人的 hover
 // var www = document.querySelector("#food").clientWidth;

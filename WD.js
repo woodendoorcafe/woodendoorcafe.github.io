@@ -49,9 +49,9 @@ var swiper = new Swiper('section#banner .swiper-container', {
 var swiper = new Swiper('section#space .swiper-container', {
     loop: true,
     spaceBetween: 30,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
 
@@ -66,14 +66,6 @@ if (!flux.browser.supportsTransitions)
             autoplay: true,
         });
 
-
-
-// 瀑布流 masonry.js
-$(function () {
-    $('.masonry').masonry({
-        itemSelector: '.item'
-    })
-});
 
 // <!-- swiper-food -->
 var myswiper = new Swiper('section#food .swiper-container', {

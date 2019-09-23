@@ -9,13 +9,16 @@ nav #navToggler a,p {
     padding: 0;
     margin: 0;
 }
-
+nav .nav-link{
+    color: aliceblue;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight:700;
 }
 /* h1{} */
 h2{
-    font-size: 40px;    
+    font-size: 40px;
+       
 }
 
 h3{
@@ -28,6 +31,7 @@ h4{
 
 h5{
     font-size: 22px;
+    color: #595757;
 }
 
 /* h6{} */
@@ -37,17 +41,18 @@ h5{
     font-size: 18px;
     line-height: 1.45;
     font-family: '微軟正黑體', 'sans-serif';
-    background-color:#8ef6f6bb;
+    background-color:#FFFFCB;
     padding: 30px;    
 } 
 #about .row div h3{
     font-size: 25px;
     font-weight: 400;
+    color: #595757;
 }
 
 #about .row div h5{
     font-size: 14px;
-    color: blueviolet;
+    color: #8D6630;
 }
 
 #space .col-gold-sm h2{
@@ -79,6 +84,7 @@ h5{
 #comment h4{
     font-size: 20px;
     font-weight:500 !important;
+    color: #595757;
     font-family: '微軟正黑體';
     letter-spacing: 4.2px;
     margin-left: 14.5px;
@@ -98,11 +104,17 @@ h5{
 }
 #contact p{
     font-size: 16px;
-    color: rgb(139, 133, 125);
+    color: #808080;
     padding-left: 5px;
+}
+#contact .form-text{
+    color: antiquewhite !important;
 }
 #contact .col-gold-sm h3{
     font-weight: 100;
+}
+#contact .traffic .col-gold-lg,#contact .traffic .col-gold-sm{
+    background-color: unset;
 }
 #contact .text_title{
     font-size: 35px;
@@ -123,11 +135,13 @@ footer .text-right{
 }
 footer .pt{
     font-size:14px;
+    color: antiquewhite;
     line-height: 34px;
     margin-bottom: 7px;
 }
 footer .copy{
     font-size: 11px;
+    color: antiquewhite;
 }
 @media(max-width: 768px){
     #about .row div h4{

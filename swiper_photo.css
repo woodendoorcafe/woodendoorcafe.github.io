@@ -97,6 +97,51 @@
 }
 
 @media(max-width: 576px){
+    
+
+#banner .banner_imgsrc1{
+    background-image: url("./img/mobile/banner/banner_1.jpg");
+}
+#banner .banner_imgsrc2{
+    background-image: url("./img/mobile/banner/banner_2.jpg");
+}
+#banner .banner_imgsrc3{
+    background-image: url("./img/mobile/banner/banner_3.jpg");
+}
+#banner .banner_imgsrc4{
+    background-image: url("./img/mobile/banner/banner_4.jpg");
+}
+#banner .banner_imgsrc5{
+    background-image: url("./img/mobile/banner/banner_5.jpg");
+}
+   
+    #space .space_imgsrc1{
+        background-image: url("./img/PC/space/space_1.jpg");
+    }
+    #space .space_imgsrc2{
+        background-image: url("./img/mobile/space/space_2.jpg");
+    }
+    #space .space_imgsrc3{
+        background-image: url("./img/mobile/space/space_3.jpg");
+    }
+    #space .space_imgsrc4{
+        background-image: url("./img/mobile/space/space_4.jpg");
+    }
+    #space .space_imgsrc5{
+        background-image: url("./img/mobile/space/space_5.jpg");
+    }
+    #space .space_imgsrc6{
+        background-image: url("./img/mobile/space/space_6.jpg");
+    }
+    #space .space_imgsrc7{
+        background-image: url("./img/PC/space/space2_1.jpg");
+    }
+    #space .space_imgsrc8{
+        background-image: url("./img/PC/space/space2_2.jpg");
+    }
+    #space .space_imgsrc9{
+        background-image: url("./img/PC/space/space2_3.jpg");
+    }
     #contact .contact_imgsrc {
         background-image:unset;
         background-color: #B28252;

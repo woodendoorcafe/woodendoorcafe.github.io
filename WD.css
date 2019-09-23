@@ -183,11 +183,6 @@ section#space .container .row {
 #space .col-gold-lg {
     position: relative;
 }
-
-#space .container .row {
-    background-color: #8ff7f733;
-}
-
   
 @media(max-width: 576px){
     #space .swiper-wrapper, #space .swiper-slide{
@@ -346,6 +341,9 @@ section#comment [class*=col-] {
     /* #contact .traffic .col-gold-sm.pr-13{
         padding: 0 80px !important;
     } */
+    #contact .traffic .pr-6{
+        padding-right: 0rem;
+    }
 }
 @media(max-width: 400px){
     #contact .col-gold-lg{

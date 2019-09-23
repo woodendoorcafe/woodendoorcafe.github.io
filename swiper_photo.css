@@ -92,3 +92,13 @@
 #comment .comment1_imgsrc6{
     background-image: url("./img/PC/comment/comment_6.jpg");   
 }
+#contact .contact_imgsrc {
+    background-image:url('./img/PC/contact.jpg');
+}
+
+@media(max-width: 576px){
+    #contact .contact_imgsrc {
+        background-image:unset;
+        background-color: #B28252;
+    }
+}

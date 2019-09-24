@@ -94,7 +94,7 @@
     background-image: url("./img/PC/comment/comment_6.jpg");   
 }
 #contact .contact_imgsrc {
-    background-image:url('./img/PC/contact.jpg');
+    background-image:url('./img/PC/contact/contact.jpg');
 }
 
 @media(max-width: 576px){

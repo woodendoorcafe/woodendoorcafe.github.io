@@ -229,13 +229,15 @@ footer .copy{
     }
     #contact .traffic_title{
         font-size: 25px;
+        letter-spacing: 5px;
     }
     #contact .text_title{
         font-size: 20px;
         text-align: center;
+        letter-spacing: 3px;
     }
     #contact .traffic p{
-        font-size: 15px;
+        font-size: 13px;
         color: #595757;
         line-height: 30px;
         margin: 0;

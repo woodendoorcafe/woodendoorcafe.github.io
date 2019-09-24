@@ -492,9 +492,12 @@ section#comment [class*=col-] {
 }
 /* Footer */
 
+/* footer .icon{
+    
+} */
 footer .icon_text{
     padding-left: 5px;
-    /* line-height: 34px; */
+    color: antiquewhite;
 }
 
 footer small{

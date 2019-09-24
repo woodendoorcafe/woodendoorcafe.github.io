@@ -29,8 +29,10 @@ h5{
 
 /* h6{} */
 
-nav #navToggler a,p {
+nav #navToggler a, nav #navToggler p {
     font-size: 19px;
+    font-weight: 100;
+    letter-spacing:4px;
     padding: 0;
     margin: 0;
 }
@@ -111,8 +113,9 @@ nav .nav-link{
 }
 #contact p{
     font-size: 16px;
-    color: #3e3a39;
+    color: #595757;
     padding-left: 5px;
+    margin-bottom: 0;
 }
 #contact .form-text{
     color: antiquewhite !important;
@@ -120,14 +123,14 @@ nav .nav-link{
 #contact .col-gold-sm h3{
     font-weight: 100;
 }
-#contact .traffic .col-gold-lg,#contact .traffic .col-gold-sm{
-    background-color: unset;
+#contact .traffic_title{
+    font-size: 30px;
 }
 #contact .text_title{
-    font-size: 35px;
+    font-size: 26px;
 }
 #contact .traffic p{
-    font-size: 26px;
+    font-size: 21px;
     line-height: 45px;
     margin: 0;
     padding-left: 0px;
@@ -214,7 +217,7 @@ footer .copy{
     }
     #contact p{
         font-size: 13px;
-        color: rgb(139, 133, 125);
+        color: #595757;
         padding-left: unset;
     }
     #contact .col-gold-sm h3{
@@ -224,14 +227,17 @@ footer .copy{
     #contact .col-gold-sm p{
         color: antiquewhite;
     }
+    #contact .traffic_title{
+        font-size: 25px;
+    }
     #contact .text_title{
-        font-size: 26px;
+        font-size: 20px;
         text-align: center;
     }
     #contact .traffic p{
-        font-size: 19px;
+        font-size: 15px;
         color: #595757;
-        line-height: 45px;
+        line-height: 30px;
         margin: 0;
     }
     #contact input, #Select_adult, #Select_child {

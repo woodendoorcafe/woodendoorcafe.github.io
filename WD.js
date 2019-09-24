@@ -18,6 +18,12 @@ $(window).scroll(function (evt) {
 // var s = skrollr.init();
 // 跟swper衝突
 
+// bamburger to x
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
 // 漢堡條展開後，點連結會收合
 $(window).scroll(function () {

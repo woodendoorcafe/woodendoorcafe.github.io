@@ -10,13 +10,18 @@ body {
     /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
     padding-top: 96px;
 }
+
+.mb-96{
+    margin-bottom: 96px;
+}
+
 @media(max-width: 800px){
     .pt-96{
         padding-top: 35px;
     }
-}
-.mb-96{
-    margin-bottom: 96px;
+    .mb-96{
+        margin-bottom: 35px;
+    }
 }
 
 .br-l {
@@ -118,6 +123,49 @@ nav.navbar {
     nav #navToggler a{
         line-height: calc(calc(100vh - 80px) / 5);
     }
+    #nav-icon1{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+      }
+      
+      #nav-icon1 span {
+        display: block;
+        position: absolute;
+        height: 2.5px;
+        border-radius: 9px;
+        width: 100%;
+        background: antiquewhite;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+      }
+      
+      #nav-icon1 span:nth-child(1) {
+        top: 4px;
+      }
+      #nav-icon1 span:nth-child(2) {
+        top: 13px;
+      }
+      #nav-icon1 span:nth-child(3) {
+        top: 22px;
+      }
+      #nav-icon1.open span:nth-child(1) {
+        top: 14px;
+        transform: rotate(135deg);
+      }
+      
+      #nav-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+      }
+      
+      #nav-icon1.open span:nth-child(3) {
+        top: 14px;
+        
+        transform: rotate(-135deg);
+      }
 }
 
 /* Banner */

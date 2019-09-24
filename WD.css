@@ -105,7 +105,7 @@ nav.navbar {
 
 @media(max-width: 768px){
     .navbar-light .navbar-brand {
-        /* margin: 0 calc(50vw - 126.5px) 0 auto; */
+        margin: 0 calc(50vw - 126.5px) 0 auto;
     }
     nav .navbar-collapse{
         height: calc(100vh - 80px);

@@ -4,14 +4,7 @@ body{
     font-family: 'Noto Sans TC','微軟正黑體', sans-serif;
     font-weight:700;
 }
-nav #navToggler a,p {
-    font-size: 19px;
-    padding: 0;
-    margin: 0;
-}
-nav .nav-link{
-    color: aliceblue;
-}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight:700;
 }
@@ -35,6 +28,15 @@ h5{
 }
 
 /* h6{} */
+
+nav #navToggler a,p {
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+}
+nav .nav-link{
+    color: antiquewhite;;
+}
 
 #about .row div h4{
     width: 330px;
@@ -75,6 +77,11 @@ h5{
     font-family: '微軟正黑體', 'sans-serif';
 }
 
+@media(max-width:768px){
+    #space .col-gold-sm h4{
+        margin-left: 0px;
+    }
+}
 
 #food p{
     font-size: 40px;

@@ -8,7 +8,7 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 // NAV 滑動變色
 $(window).scroll(function (evt) {
     // 判斷滑動高度 navbar-top已經加class了,所以不需.句號
-    if ($(window).scrollTop() > 345)
+    if ($(window).scrollTop() > 405)
         $(".navbar").removeClass("navbar-top")
     else
         $(".navbar").addClass("navbar-top")

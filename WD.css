@@ -100,7 +100,11 @@ nav.navbar {
     background-color: transparent !important;
 }
 .navbar-top-bg {
-    background-color: #594841d5;
+    background-color: #594841e3;
+    color: antiquewhite;
+}
+.navbar-toggler {
+    border: 1px solid antiquewhite;
 }
 
 @media(max-width: 768px){
@@ -267,7 +271,17 @@ section#food [class*=col-] {
 
 section#food .row a{
     text-decoration-line: none;
+    color: none;
 }
+
+/* .span-light {
+    background-color: #0b5a1236;
+}
+
+.span-dark {
+    background-color: #5a1d0b36;
+} */
+
 /* 
 #food .swiper-slide {
     background-position: center;

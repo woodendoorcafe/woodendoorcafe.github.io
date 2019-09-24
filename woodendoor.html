@@ -37,10 +37,10 @@
 
     <!-- NAV -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-top-bg">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-top-bg">
         <div class="container d-flex align-items-md-end">
             <a class="navbar-brand" href="#banner">
-                <img src="./img/logo_gray90.png" class="d-inline-block align-top" alt="木門咖啡">
+                <img src="./img/logo_white.png" class="d-inline-block align-top" alt="木門咖啡">
                 <!-- logo高 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54 -->
                 <h1 class="d-none">木門咖啡</h1>
             </a>
@@ -77,9 +77,9 @@
     </nav>
 
     <!-- Banner -->
-    <section id="banner" class="pt-80">
+    <section id="banner" class="">
         <!-- Swiper -->
-        <div class="swiper-container w-100 h-banner">
+        <div class="swiper-container vw-100 vh-100">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-img banner_imgsrc1"></div>
                 <div class="swiper-slide swiper-img banner_imgsrc2"></div>
@@ -147,7 +147,13 @@
             <div class="row ">
                 <div class="col d-flex justify-content-center align-items-center mt-4">
                     <h5 class="pr-3"> ● </h5>
-                    <h3 class="text-center"> 我們用心經營、努力創造，
+                    <!-- PC -->
+                    <h3 class="text-center d-sm-block d-none"> 我們用心經營、努力創造，
+                        <br class="d-block d-sm-none">
+                        就只為呈現最好的給大家
+                    </h3>
+                    <!-- mobile -->
+                    <h3 class="text-center d-block d-sm-none"> 我們用心經營、努力創造
                         <br class="d-block d-sm-none">
                         就只為呈現最好的給大家
                     </h3>
@@ -241,11 +247,12 @@
                                     data-swiper-autoplay="1500">
                                 <div class="food card-img-overlay rgba-dark">
                                     <p>主食</p>
+                                    <p class=" p-2 d-lg-none d-block" style="background-color: #ffffff7a;display: inline;">主食</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class=" p-2 d-lg-none d-block" style="background-color: #B28252;">主食</p>
+                    
                 </a>
 
                 <a class="col-md-4 col-6 col-6" href="./img/PC/food/food_brunch.jpg" data-toggle="lightbox" data-gallery="gallery">

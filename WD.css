@@ -239,7 +239,7 @@ section#space .container .row {
     }
     #space .col-gold-sm{
         width: 80%;
-        margin: 0 auto;
+        margin: 0;
         background-color: unset;
         
     }

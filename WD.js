@@ -1,8 +1,4 @@
-// 燈箱效果 lightbox
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-  });
+
 
 
 // NAV 滑動變色
@@ -18,7 +14,7 @@ $(window).scroll(function (evt) {
 // var s = skrollr.init();
 // 跟swper衝突
 
-// bamburger to x
+// hamburger to x
 $(document).ready(function(){
 	$('#nav-icon1').click(function(){
 		$(this).toggleClass('open');
@@ -44,6 +40,11 @@ $(window).scroll(function () {
 
 // <!-- Swiper-banner -->
 var swiper = new Swiper('section#banner .swiper-container', {
+    speed: 3000,
+    autoplay: {
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+    },
     loop: true,
     slidesPerView: 'auto',
     pagination: {
@@ -58,6 +59,11 @@ var swiper = new Swiper('section#banner .swiper-container', {
 
 // <!-- Swiper-space -->
 var swiper = new Swiper('section#space .swiper-container', {
+    speed: 2000,
+    autoplay: {
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+    },
     loop: true,
     spaceBetween: 30,
     navigation: {
@@ -86,7 +92,7 @@ var myswiper = new Swiper('section#food .swiper-container', {
     autoplay: {
         delay: 1000,
         stopOnLastSlide: false,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     // 可以一直輪迴
     loop: true,
@@ -103,122 +109,12 @@ var myswiper = new Swiper('section#food .swiper-container', {
     },
 });
 
+// 燈箱效果 lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 
-// swiper-food 的 氣死人的 hover
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide.nameA").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-light">特調</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide.nameA").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide.nameB").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-dark">咖啡</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide.nameB").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide.nameC").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-light">茶飲</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide.nameC").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide.nameD").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-dark">輕食</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide.nameD").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide .nameE").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-light">主食</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide .nameE").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
-// var www = document.querySelector("#food").clientWidth;
-// if (www > 768) {
-//     $("#food .swiper-slide.nameF").hover(
-//         function () {
-//             $(this).append('<span class="pc_span_font span-dark">甜點</span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-
-// } else {
-//     $("#food .swiper-slide.nameF").hover(
-//         function () {
-//             $(this).append('<span class=".mobile_span"></span>');
-//         }, function () {
-//             $(this).find("span").last().remove();
-//         }
-//     );
-// };
 
 
 // <!-- swiper-comment -->

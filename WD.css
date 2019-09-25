@@ -502,5 +502,5 @@ footer .icon_text{
 
 footer small{
     text-align: center !important;
-    letter-spacing: unset;
+    letter-spacing: 0.8px;
 }

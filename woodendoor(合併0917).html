@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="zh-tw">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <!-- 插入解鎖文件 -->
+    <link rel="stylesheet" type="text/css" href="unlock.css">
+
+    <title>木門咖啡</title>
+
+    <style>
+        /* 通用 */
+        body {
+            overflow-x: hidden;
+        }
+
+        .pt-96 {
+            /* 用padding而不用margin是因為nav連結跳轉時，會掠過margin直接以div的頂端作為起始點 */
+            padding-top: 96px;
+        }
+
+        .br-l {
+            border-top-left-radius: 105px;
+        }
+
+        .br-r {
+            border-top-right-radius: 105px;
+        }
+
+        .col-gold-lg {
+            width: 61.8%;
+        }
+
+        .col-gold-sm {
+            width: 38.2%;
+        }
+
+        @media (max-width: 576px) {
+
+
+            .container .slash {
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                /* flex-wrap: wrap; */
+                display: inline-block;
+                line-height: 2;
+            }
+
+        }
+
+        .slash {
+            border-top: none;
+            border-bottom: none;
+        }
+
+
+        /* 姿樺的，待整理 */
+
+        .space .container .row {
+            background-color: #8ff7f733;
+        }
+
+        /* .space .container .row .col-gold-lg { */
+        /* background-image: url("./img/七彩木門-天花板.jpg"); */
+        /* background-size: cover; */
+        /* } */
+
+        .space .container .row .col-gold-sm h2 {
+            text-align: center;
+            font-size: 25px;
+            margin: 95px 55px 0;
+        }
+
+        .space .container .row .col-gold-sm h4 {
+            margin: 30px 55px 95px;
+            background-color: unset;
+        }
+
+        .contact .container .row .col-gold-lg {
+            padding: 30px 80px;
+        }
+
+        .contact .container .col-gold-sm {
+            padding: 45px 60px;
+        }
+
+        .contact .container .col-gold-sm .text {
+            padding: 35px;
+        }
+
+        .lock {
+            height: 40px;
+            width: 100%;
+        }
+
+        .packing {
+            border-width:2px;
+            border-bottom-style: dotted;
+        }
+
+        .contact .container .col-gold-sm .text2 {
+            font-size: 15px;
+            margin-top: 20%;
+        }
+
+        /* NAV 導覽列 */
+
+        /* Banner */
+        .h-banner {
+            height: calc(100vh - 100px);
+        }
+
+        /* .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            width: 35px;
+            height: 55px;
+        } */
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        /* 初次相遇 */
+        /* 一探方隅 */
+
+        /* 淺嘗美味 */
+        section#food [class*=col-] {
+            /* 針對 section.food 裡的有col開頭的class的設定 */
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .food:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 32pt;
+            font-family: '微軟正黑體';
+            font-weight: bold;
+        }
+
+        .rgba-light:hover {
+            background-color: #5a270b62;
+        }
+
+        .rgba-dark:hover {
+            background-color: #5a270ba4;
+        }
+
+        .food.card-img-overlay p {
+            display: none;
+        }
+
+        .food.card-img-overlay:hover p {
+            display: inline;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+            /* position: absolute; */
+            /* left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px; */
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* 佳評如潮 */
+
+        /* 線上聯繫 */
+
+        /* Footer */
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV 不動 -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex align-items-end">
+            <a class="navbar-brand" href="#banner">
+                <img src="/img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle" alt="木門咖啡">
+                <!-- logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54 -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
+                aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">初次相遇</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#space">一探方隅</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food">淺嘗美味</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comment">佳評如潮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">線上聯繫</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner" class="">
+        <!-- Swiper -->
+        <div class="swiper-container h-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/banner/banner-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/banner/banner-2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/banner/banner-3.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next px-lg-5"></div>
+            <div class="swiper-button-prev px-lg-5"></div>
+        </div>
+    </section>
+
+    <!-- NAV 導覽列 黏住 -->
+    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #fdece3;">
+        <div class="container d-flex align-items-end">
+            <a class="navbar-brand" href="#banner">
+                <img src="/img/logo-woodendoor.jpg" height="54" class="d-inline-block align-top rounded-circle" alt="木門咖啡">
+                logo寬高原因 80(設計師要的)-8*2(navbar)-5*2(navbar-brand)=54
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler"
+                aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">初次相遇</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#space">一探方隅</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food">淺嘗美味</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comment">佳評如潮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">線上聯繫</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- 初次相遇 -->
+    <section id="about" class="pt-96">
+        <div class="container">
+            <div class="d-sm-flex d-block align-items-end text-center mb-3">
+                <h2 class="pr-3 pl-2 slash ">初次相遇</h2>
+                <h5 class="d-sm-block d-none">/</h5>
+                <h5>冉冉陽光指引我們相遇</h5>
+            </div>
+            <div class="row mb-xl-5">
+                <div class="col-xl-7">
+                    <img class="br-l" src="./img/七彩木門-天花板.jpg" alt="空間照片" style="width: 100%;">
+                </div>
+                <div class="col-xl-4">
+                    <h4>Logo是將Wooden Door其中的W,D用線條簡單勾勒出似咖啡杯的樣子，美妙的將兩者合而為一
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row mb-xl-5 justify-content-around">
+                <div class="col-xl-4">
+                    <h4>天花板以木門拼接做為特色，搭配天窗玻璃折色自然光線，並選用綠色植栽活化環境整體氛圍。</h4>
+                </div>
+                <div class="col-xl-7">
+                    <img class="br-r" src="./img/七彩木門-天花板.jpg" alt="空間照片" style="width: 100%;">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col d-flex justify-content-center">
+                    <h3>我們用心經營、努力創造，只為了呈現最好的給大家</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 一探方隅 -->
+    <section id="space" class="pt-96">
+        <div class="container">
+            <div class="d-sm-flex d-block align-items-end text-center mb-3">
+                <h2 class="pr-3 pl-2 slash ">一探方隅</h2>
+                <h5 class="d-sm-block d-none">/</h5>
+                <h5>踏進悠閑舒適的一隅</h5>
+            </div>
+            <!-- 一探方隅的輪播 -->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/img/banner/banner-1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/banner/banner-2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/banner/banner-3.jpg" alt="">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 一探方隅的空間設計概念 -->
+            <div class="row">
+                <div class="col-gold-lg ">
+                    <div class="rowb ">
+                        <div class="col d-sm-flex d-none">
+                            <img src="./img/七彩木門-天花板.jpg" alt="" class="img-fluid">
+                            <p class="d-flex justify-content-end">2017商業空間類餐飲空間TID獎</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-gold-sm  px-xl-1">
+                    <h2>空間設計概念</h2>
+                    <h4>以「自然」「舒適」為主軸，運用切割天窗引入光線，減少人工照明的同時，落實環保節能的永續精神，而空間產生無限延伸的奇幻感受，側牆富含生命力的植生牆面讓植栽在溫煦的陽光下，充分進行光合作用，人與植物即便在室內也能享受日光帶來的溫暖，藉此形塑木門咖啡的風格意象。
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 淺嘗美味 -->
+    <section id="food" class="pt-96">
+        <div class="container">
+            <div class="d-sm-flex d-block align-items-end text-center mb-3">
+                <h2 class="pr-3 pl-2 slash ">淺嘗美味</h2>
+                <h5 class="d-sm-block d-none">/</h5>
+                <h5>品味手作的簡單嘗新</h5>
+            </div>
+            <div class="row px-3">
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-light">
+                        <p>特調</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-dark">
+                        <p>咖啡</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-light">
+                        <p>茶飲</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-dark">
+                        <p>輕食</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-light">
+                        <p>主食</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <img src="https://media.istockphoto.com/vectors/sketch-mug-of-coffee-on-a-saucer-the-inscription-is-coffee-vector-of-vector-id977658164"
+                        alt="" class="img-fluid border border-dark">
+                    <div class="food card-img-overlay rgba-dark">
+                        <p>甜點</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 此區swiper會與banner的swiper衝突 -->
+            <!-- <div class="row">
+                <div class="col-xl-4">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" data-swiper-autoplay="1000">
+                            <div class="swiper-slide" style="background-image:url(./mountain1.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./mountain2.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./mountain1.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./mountain2.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./mountain1.jpg)"></div>
+                            <div class="swiper-slide" style="background-image:url(./mountain2.jpg)"></div>
+                        </div>
+                        Add Pagination
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- 佳評如潮 -->
+    <section id="comment" class="pt-96">
+        <div class="container">
+            <div class="d-sm-flex d-block align-items-end text-center mb-3">
+                <h2 class="pr-3 pl-2 slash ">佳評如潮</h2>
+                <h5 class="d-sm-block d-none">/</h5>
+                <h5>匯集好評的迸流</h5>
+            </div>
+            <div class="row masonry">
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 pt-lg-5 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 pt-lg-5 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 mb-4 item">
+                    <img src="/img/comment/comment-4.jpg" alt="" class="img-fluid br-l ">
+                    <div class="card-body bg-warning">
+                        <h4>這是瀑布流測試文字的卡片內文唷</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 線上聯繫 -->
+    <section id="contact" class="pt-96">
+        <div class="container">
+            <div class="d-sm-flex d-block align-items-end text-center mb-3">
+                <h2 class="pr-3 pl-2 slash ">線上聯繫</h2>
+                <h5 class="d-sm-block d-none">/</h5>
+                <h5>搭起一個互動橋樑</h5>
+            </div>
+            <div class="row">
+                <div class="col-gold-lg">
+                    <form>
+                        <div class="form-row justify-content-between">
+                            <div class="form-group col-md-4">
+                                <label for="inputDate">預約日期</label>
+                                <input type="date" class="form-control" id="date" placeholder="2019/09/08" />
+                            </div>
+                            <div class="form-group col-md-2">
+
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">姓名</label>
+                                <input type="name" class="form-control" id="inputname4" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-between">
+                            <div class="form-group col-md-4">
+                                <label for="inputTime">預約時間</label>
+                                <input type="time" id="inputTime" class="form-control">
+                            </div>
+                            <div class="form-group col-md-2">
+
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">E-mail</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-between">
+                            <div class="form-group col-md-6">
+                                <label for="Select">用餐人數 可接受1-8人(包含大人小孩))</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <select class="form-control" id="Select_adult">
+                                            <option selected>_位大人</option>
+                                            <option>1位大人</option>
+                                            <option>2位大人</option>
+                                            <option>3位大人</option>
+                                            <option>4位大人</option>
+                                            <option>5位大人</option>
+                                            <option>6位大人</option>
+                                            <option>7位大人</option>
+                                            <option>8位大人</option>
+                                        </select></div>
+                                    <div class="col">
+                                        <select class="form-control" id="Select_child">
+                                            <option selected>_位小孩</option>
+                                            <option>1位小孩</option>
+                                            <option>2位小孩</option>
+                                            <option>3位小孩</option>
+                                            <option>4位小孩</option>
+                                            <option>5位小孩</option>
+                                            <option>6位小孩</option>
+                                            <option>7位小孩</option>
+                                            <option>8位小孩</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPhone4">聯絡電話</label>
+                                <input type="phone" class="form-control" id="inputPhone4" placeholder="電話">
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-between">
+                            <div class="form-group col-md-6">
+                                <div class="col lock"></div>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <button type="button" class="btn btn-primary btn-block">確認</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="form-row">
+                        <p><small class="form-text text-muted">如有訂位以外的需求，請撥打電話與我們聯繫。04-2329-8877</small></p>
+                        <p><small class="form-text text-muted">本店採自助式，不加收服務費，自取所需的飲用水、紙巾及餐具。</small></p>
+                        <p><small class="form-text text-muted">皆可使用消費。<img src="" alt=""><img src="" alt=""><img src=""
+                                    alt=""></small></p>
+                    </div>
+                </div>
+                <div class="col-gold-sm px-xl-5">
+                    <div class="text">
+                        <h3>
+                            <i class="fab fa-facebook-square"></i>
+                            木門咖啡
+                        </h3>
+                        <h3>
+                            <i class="fas fa-map-marker-alt"></i>
+                            台中市南屯區大墩十二街126號
+                        </h3>
+                        <h3>
+                            <i class="fas fa-phone-alt"></i>
+                            04-23298877
+                        </h3>
+                    </div>
+                    <div class="text2 ">
+                        點個輕食或咖啡，<br>和我們一同享受這2小時的悠閒慢活時光吧。
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-lg-10 col-12 mx-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3640.619896427926!2d120.6498197141588!3d24.149983384393938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1568401037998!5m2!1szh-TW!2stw"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="row_title row justify-content-center">
+                <h2 class="col-md-2" style="text-align: center;">交通資訊</h2>
+            </div>
+            <div class="row">
+                <div class="col-gold-lg pr-xl-5">
+                    <div class="text_title ">鄰近停車場</div>
+
+                    <div class="form-row">
+                        <div class="packing form-group col-md-6">
+                            <p>停車場名稱</p>
+                        </div>
+                        <div class="packing form-group col-md-6">
+                            <p>收費標準</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="packing form-group col-md-6">
+                            <p>大興停車場</p>
+                        </div>
+                        <div class="packing form-group col-md-6">
+                            <p>每半小時10元</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="packing form-group col-md-6">
+                            <p>台灣聯通大昌停車場</p>
+                            <p>台灣聯通大新停車場</p>
+                            <p>育新停車場</p>
+                        </div>
+                        <div class="packing form-group col-md-6">
+                            <p>每半小時20元</p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="packing form-group col-md-6">
+                            <p>䡛轉停車場大墩十二&車麻吉</p>
+                            <p>嘟嘟房公益站</p>
+                        </div>
+                        <div class="packing form-group col-md-6">
+                            <p>平日每小時30元</p>
+                            <p>假日每小時40元</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-gold-sm px-xl-5">
+                    <div class="text_title ">搭乘公車</div>
+                    <div class="packing">
+                        東興大墩十二街口<br>70.70B.127
+                    </div>
+                    <div class="packing">
+                        公益東興路口<br>27.72.81.107
+                    </div>
+                    <div class="packing">
+                        大墩十二街口<br>60
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="" alt="fb">
+                木門咖啡<br>
+                <img src="" alt="place">
+                台中市南屯區大墩十二街126號
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="phone">
+                04-23298877<br>
+                <img src="" alt="time">
+                9:00 - 21:00
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                讓我們一起享受陽光，擁有舒適寧靜的慢活步調
+            </div>
+            <div class="col-md-4">
+                本網站僅作教學用，如有侵權請告知<br>
+                Copyright © 2019 木門咖啡 ALL RIGHT RESERVED
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- 插件加載 -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- 瀑布流 masonry.js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(function () {
+            $('.masonry').masonry({
+                itemSelector: '.item'
+            })
+        });
+    </script>
+
+    <!-- 插入解鎖JS -->
+    <script src='http://cdn.staticfile.org/jquery/1.10.0/jquery.min.js'></script>
+    <script src='unlock.js'></script>
+    <script>
+        $('.lock').slideToUnlock({
+            text: '記得向右滑動',
+            succText: '恭喜解鎖成功',
+            // 原本顯示的底色
+            bgColor: '#fce',
+            // 滑動時顯示的底色   
+            progressColor: '#aaa',
+            // 滑動完顯示的底色  
+            succColor: '#ddd',
+            textColor: '#fff',
+            succTextColor: '#fff',
+        });
+    </script>
+</body>
+
+</html>

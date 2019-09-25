@@ -1,0 +1,266 @@
+/* 字體 */
+
+body{
+    font-family: 'Noto Sans TC','微軟正黑體', sans-serif;
+    font-weight:700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:700;
+}
+/* h1{} */
+h2{
+    font-size: 40px;
+       
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 22px;
+    color: #595757;
+}
+
+/* h6{} */
+
+nav #navToggler a, nav #navToggler p {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing:4px;
+    padding: 0;
+    margin: 0;
+}
+nav .nav-link{
+    color: antiquewhite;;
+}
+
+#about .row div h4{
+    width: 330px;
+    font-size: 18px;
+    line-height: 1.45;
+    font-family: '微軟正黑體', 'sans-serif';
+    background-color:rgba(255, 255, 203, 0.8);
+    padding: 30px;    
+} 
+#about .row div h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #595757;
+}
+
+#about .row div h5{
+    font-size: 14px;
+    color: #8D6630;
+}
+
+#space .col-gold-sm h2{
+    font-family: '微軟正黑體', 'sans-serif';
+}
+.TID {
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    position: absolute;
+    right: 18px;
+    bottom: 10px;
+    z-index: 199;
+}
+#space .col-gold-sm h4{
+    font-size: 20px;
+    line-height: 1.85;
+    letter-spacing: 1.9px;
+    margin-left: 10px;
+    font-family: '微軟正黑體', 'sans-serif';
+}
+
+@media(max-width:768px){
+    #space .col-gold-sm h4{
+        margin-left: 0px;
+    }
+}
+
+#food p{
+    font-size: 40px;
+    text-align: center;
+}
+
+#comment h4{
+    font-size: 20px;
+    font-weight:500 !important;
+    color: #595757;
+    font-family: '微軟正黑體';
+    letter-spacing: 4.2px;
+    margin-left: 14.5px;
+}
+#comment .masonry a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+#contact h3{
+    margin: 15px 0;
+}
+#contact label{
+    font-size: 26px;
+}
+#contact p{
+    font-size: 16px;
+    color: #595757;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+#contact .form-text{
+    color: antiquewhite !important;
+}
+#contact .col-gold-sm h3{
+    font-weight: 100;
+}
+#contact .traffic_title{
+    font-size: 30px;
+}
+#contact .text_title{
+    font-size: 26px;
+}
+#contact .traffic p{
+    font-size: 21px;
+    line-height: 45px;
+    margin: 0;
+    padding-left: 0px;
+}
+#contact input, #Select_adult, #Select_child {
+    font-size: 21px;
+}
+
+footer .text-right{
+    font-size:19px;
+    line-height: 17px; 
+}
+footer .pt{
+    font-size:14px;
+    color: antiquewhite;
+    line-height: 34px;
+    margin-bottom: 7px;
+}
+footer .copy{
+    font-size: 11px;
+    color: antiquewhite;
+}
+@media(max-width: 768px){
+    #about .row div h4{
+        width: 224px;
+        
+    }
+    #about .row div h3{
+        font-size: 15px;
+    }
+    #about .row div h5{
+        font-size: 9px;
+    }
+    footer .text-right{
+        text-align: center !important;
+    }
+
+}
+@media(max-width: 576px){
+    h2{
+        font-size: 29px;    
+    }
+    /* h3{
+    font-size: 26px;
+    } */
+    h4{
+        font-size: 19px;
+    }
+    /* h5{
+    font-size: 22px;
+    } */
+    
+    #about .row div h5{
+        font-size: 7px;
+    }
+    
+
+    #about .row div h4{
+        width: 150px;
+        font-size: 13px;
+        line-height: 1.8;
+        font-family: '微軟正黑體', 'sans-serif';
+        padding: 16px;    
+    } 
+    .swiper-container .TID {
+   
+        right: 18px;
+        top: 10px;
+       
+    }
+    #space .col-gold-sm h4{
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 1.6px;
+        margin-left: unset;
+    }
+
+    #food p{
+        font-size: 19px;
+    }
+
+    #contact label{
+        font-size: 19px;
+    }
+    #contact p{
+        font-size: 13px;
+        color: #595757;
+        padding-left: unset;
+    }
+    #contact .col-gold-sm h3{
+        font-weight: 100;
+        color: antiquewhite;
+    }
+    #contact .col-gold-sm p{
+        color: antiquewhite;
+    }
+    #contact .traffic_title{
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    #contact .text_title{
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    #contact .traffic p{
+        font-size: 13px;
+        color: #595757;
+        line-height: 30px;
+        margin: 0;
+    }
+    #contact input, #Select_adult, #Select_child {
+        font-size: 13px;
+    }
+    footer .pt{
+        font-size:16px;
+        padding-top:10px; 
+        text-align: center;
+    }
+    footer .text-right{
+        font-size:14px;
+        line-height:unset;
+        letter-spacing: 1.9px;
+        margin: 5px auto; 
+        text-align: center !important;
+    }
+    
+}
+@media(max-width:400px){
+    #space h2{
+        font-size: 24px;    
+    }
+}

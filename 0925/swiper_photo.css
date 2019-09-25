@@ -1,0 +1,150 @@
+
+
+#banner .banner_imgsrc1{
+    background-image: url("./img/PC/banner/banner_1.jpg");
+}
+
+#banner .banner_imgsrc2{
+    background-image: url("./img/PC/banner/banner_2.jpg");
+}
+#banner .banner_imgsrc3{
+    background-image: url("./img/PC/banner/banner_3.jpg");
+}
+#banner .banner_imgsrc4{
+    background-image: url("./img/PC/banner/banner_4.jpg");
+}
+#banner .banner_imgsrc5{
+    background-image: url("./img/PC/banner/banner_5.jpg");
+}
+
+
+#space .space_imgsrc1{
+    background-image: url("./img/PC/space/space_1.jpg");
+}
+#space .space_imgsrc2{
+    background-image: url("./img/PC/space/space_2.jpg");
+}
+#space .space_imgsrc3{
+    background-image: url("./img/PC/space/space_3.jpg");
+}
+#space .space_imgsrc4{
+    background-image: url("./img/PC/space/space_4.jpg");
+}
+#space .space_imgsrc5{
+    background-image: url("./img/PC/space/space_5.jpg");
+}
+#space .space_imgsrc6{
+    background-image: url("./img/PC/space/space_6.jpg");
+}
+
+
+#food .special_imgsrc1{
+    background-image: url("./img/PC/food/Food_special.jpg");
+}
+#food .special_imgsrc2{
+    background-image: url("./img/PC/food/Food_special.jpg");
+}
+#food .cafe_imgsrc1{
+    background-image: url("./img/PC/food/food_cafe.jpg");
+}
+#food .cafe_imgsrc2{
+    background-image: url("./img/PC/food/food_cafe.jpg");
+}
+#food .tea_imgsrc1{
+    background-image: url("./img/PC/food/food_tea.jpg");
+}
+#food .tea_imgsrc2{
+    background-image: url("./img/PC/food/food_tea.jpg");
+}
+#food .brunch_imgsrc1{
+    background-image: url("./img/PC/food/food_brunch.jpg");
+}
+#food .brunch_imgsrc2{
+    background-image: url("./img/PC/food/food_brunch.jpg");
+}
+#food .meal_imgsrc1{
+    background-image: url("./img/PC/food/food_meal.jpg");
+}
+#food .meal_imgsrc2{
+    background-image: url("./img/PC/food/food_meal.jpg");
+}
+#food .dessert_imgsrc1{
+    background-image: url("./img/PC/food/food_dessert.jpg");
+}
+#food .dessert_imgsrc2{
+    background-image: url("../img/PC/food/food_dessert.jpg");
+}
+
+#comment .comment1_imgsrc1{
+    background-image: url("./img/PC/comment/comment_1.jpg");   
+}
+#comment .comment1_imgsrc2{
+    background-image: url("./img/PC/comment/comment_2.jpg");   
+}
+#comment .comment1_imgsrc3{
+    background-image: url("./img/PC/comment/comment_3.jpg");   
+}
+#comment .comment1_imgsrc4{
+    background-image: url("./img/PC/comment/comment_4.jpg");   
+}
+#comment .comment1_imgsrc5{
+    background-image: url("./img/PC/comment/comment_5.jpg");   
+}
+#comment .comment1_imgsrc6{
+    background-image: url("./img/PC/comment/comment_6.jpg");   
+}
+#contact .contact_imgsrc {
+    background-image:url('./img/PC/contact/contact.jpg');
+}
+
+@media(max-width: 576px){
+    
+
+#banner .banner_imgsrc1{
+    background-image: url("./img/mobile/banner/banner_1.jpg");
+}
+#banner .banner_imgsrc2{
+    background-image: url("./img/mobile/banner/banner_2.jpg");
+}
+#banner .banner_imgsrc3{
+    background-image: url("./img/mobile/banner/banner_3.jpg");
+}
+#banner .banner_imgsrc4{
+    background-image: url("./img/mobile/banner/banner_4.jpg");
+}
+#banner .banner_imgsrc5{
+    background-image: url("./img/mobile/banner/banner_5.jpg");
+}
+   
+    #space .space_imgsrc1{
+        background-image: url("./img/PC/space/space_1.jpg");
+    }
+    #space .space_imgsrc2{
+        background-image: url("./img/mobile/space/space_2.jpg");
+    }
+    #space .space_imgsrc3{
+        background-image: url("./img/mobile/space/space_3.jpg");
+    }
+    #space .space_imgsrc4{
+        background-image: url("./img/mobile/space/space_4.jpg");
+    }
+    #space .space_imgsrc5{
+        background-image: url("./img/mobile/space/space_5.jpg");
+    }
+    #space .space_imgsrc6{
+        background-image: url("./img/mobile/space/space_6.jpg");
+    }
+    #space .space_imgsrc7{
+        background-image: url("./img/PC/space/space2_1.jpg");
+    }
+    #space .space_imgsrc8{
+        background-image: url("./img/PC/space/space2_2.jpg");
+    }
+    #space .space_imgsrc9{
+        background-image: url("./img/PC/space/space2_3.jpg");
+    }
+    #contact .contact_imgsrc {
+        background-image:unset;
+        background-color: #B28252;
+    }
+}

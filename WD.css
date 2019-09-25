@@ -1,6 +1,7 @@
 /* 通用 */
 body {
     overflow-x: hidden;
+    transition: 0.7s;
 }
 .icon{
     width: 34px;
@@ -113,7 +114,7 @@ nav.navbar {
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 1000px){
     .navbar-light .navbar-brand {
         margin: 0 calc(50vw - 126.5px) 0 auto;
     }
@@ -122,6 +123,9 @@ nav.navbar {
     }
     nav #navToggler a{
         line-height: calc(calc(100vh - 80px) / 5);
+    }
+    nav .navbar-toggler:focus, nav .navbar-toggler:hover {
+        background: unset;
     }
     #nav-icon1{
         width: 30px;
@@ -241,7 +245,6 @@ section#space .container .row {
         width: 80%;
         margin: 0 auto;
         background-color: unset;
-        
     }
 }
 
@@ -260,28 +263,9 @@ section#space .container .row {
     padding: 20px 30px !important;
 }
 
-
-/* #space .px-5{
-    padding: 20px !important;
-} */
 }
 
 
-/* #space .container .row .col-gold-lg { */
-/* background-image: url("../img/七彩木門-天花板.jpg"); */
-/* background-size: cover; */
-/* } */
-
-/* #space .container .row .col-gold-sm h2 {
-    text-align: center;
-    font-size: 25px;
-    margin: 95px 55px 0;
-}
-
-#space .container .row .col-gold-sm h4 {
-    margin: 30px 55px 95px;
-    background-color: unset;
-} */
 
 /* 淺嘗美味 */
 section#food [class*=col-] {
@@ -372,9 +356,6 @@ section#comment [class*=col-] {
 #contact .icon_text{
     padding-left: 5px;
 }
-#contact .traffic .pr-6{
-    padding-right: 6.6rem;
-}
 
 #contact .traffic .col-gold-sm.pr-13{
     padding: 0 13rem 0 0 ;
@@ -395,9 +376,7 @@ section#comment [class*=col-] {
     /* #contact .traffic .col-gold-sm.pr-13{
         padding: 0 80px !important;
     } */
-    #contact .traffic .pr-6{
-        padding-right: 0rem;
-    }
+
 }
 @media(max-width: 400px){
     #contact .col-gold-lg{
@@ -425,19 +404,6 @@ section#comment [class*=col-] {
     margin-left: -37px;
 }
 
-    /* 姿樺的 */
-
-/* #contact .container .row .col-gold-lg {
-    padding: 30px 80px;
-}
-
-#contact .container .col-gold-sm {
-    padding: 45px 60px;
-}
-
-#contact .container .col-gold-sm .text {
-    padding: 35px;
-} */
 .form-control{
     border-radius:11px;  
 }

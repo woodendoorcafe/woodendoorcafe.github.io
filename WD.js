@@ -4,7 +4,7 @@
 // NAV 滑動變色
 $(window).scroll(function (evt) {
     // 判斷滑動高度 navbar-top已經加class了,所以不需.句號
-    if ($(window).scrollTop() > 405)
+    if ($(window).scrollTop() > 299)
         $(".navbar").removeClass("navbar-top")
     else
         $(".navbar").addClass("navbar-top")

@@ -72,7 +72,7 @@ window.setTimeout(
     function () {
         $('.animte').addClass("hide");
     }
-    , 4000);
+    , 3000);
 
 
 function ScrollReset() {

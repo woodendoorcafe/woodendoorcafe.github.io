@@ -114,7 +114,7 @@ footer {
     display: table;
     text-align: center;
     opacity: 0;
-    transition: 2s;
+    transition: 1s;
 }
 
 .animte.active{

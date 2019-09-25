@@ -11,54 +11,54 @@ var mainCtr = $("#main-ctr"),
     smile = $("#smile");
 
 var tl = new TimelineMax({
-    repeat: -1,
-    repeatDelay: .3,
-    delay: .3
+  repeat: -1,
+  repeatDelay: .3,
+  delay: .3
 });
 
 TweenMax.set([mainCtr, hello], {
-    opacity: 0
+  opacity: 0
 });
 
 tl
-    .to(mainCtr, .3, {
-        opacity: 1
-    })
-    .to(smileDown, .3, {
-        morphSVG: "#smile-up"
-    })
-    .to(smile, .3, {
-        rotation: -30,
-        transformOrigin: "center center",
-        ease: Circ.ease
-    })
-    .to(smile, .9, {
-        rotation: 900,
-        transformOrigin: "center center",
-        ease: Circ.easeInOut
-    })
-    .to(eyeLeft, .3, {
-        morphSVG: "#eye-to-left",
-        ease: Power2.ease
-    }, "-=.3")
-    .to(eyeRight, .3, {
-        morphSVG: "#eye-to-right",
-        ease: Power2.ease
-    }, "-=.3")
-    .to(eyeRight, .1, {
-        scaleY: .25,
-        transformOrigin: "center center"
-    })
-    .to(eyeRight, .1, {
-        scaleY: 1
-    })
-    .to(hello, .3, {
-        opacity: 1
-    }, "-=.3")
-    .to(mainCtr, .6, {
-        delay: 1,
-        opacity: 0
-    })
+  .to(mainCtr, .3, {
+    opacity: 1
+  })
+  .to(smileDown, .3, {
+    morphSVG: "#smile-up"
+  })
+  .to(smile, .3, {
+    rotation: -30,
+    transformOrigin: "center center",
+    ease: Circ.ease
+  })
+  .to(smile, .9, {
+    rotation: 900,
+    transformOrigin: "center center",
+    ease: Circ.easeInOut
+  })
+  .to(eyeLeft, .3, {
+    morphSVG: "#eye-to-left",
+    ease: Power2.ease
+  }, "-=.3")
+  .to(eyeRight, .3, {
+    morphSVG: "#eye-to-right",
+    ease: Power2.ease
+  }, "-=.3")
+  .to(eyeRight, .1, {
+    scaleY: .25,
+    transformOrigin: "center center"
+  })
+  .to(eyeRight, .1, {
+    scaleY: 1
+  })
+  .to(hello, .3, {
+    opacity: 1
+  }, "-=.3")
+  .to(mainCtr, .6, {
+    delay: 1,
+    opacity: 0
+  })
 
 // 開場動畫消失
 window.setTimeout(
@@ -79,10 +79,11 @@ function ScrollReset() {
     document.body.scrollTop = 0; document.documentElement.scrollTop = 0;
 }
 
+
 // NAV 滑動變色
 $(window).scroll(function (evt) {
     // 判斷滑動高度 navbar-top已經加class了,所以不需.句號
-    if ($(window).scrollTop() > 299)
+    if ($(window).scrollTop() > 199)
         $(".navbar").removeClass("navbar-top")
     else
         $(".navbar").addClass("navbar-top")
@@ -93,10 +94,10 @@ $(window).scroll(function (evt) {
 // 跟swper衝突
 
 // hamburger to x
-$(document).ready(function () {
-    $('#nav-icon1').click(function () {
-        $(this).toggleClass('open');
-    });
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+	});
 });
 
 // 漢堡條展開後，點連結會收合
@@ -154,12 +155,12 @@ var swiper = new Swiper('section#space .swiper-container', {
 // 不能用background，要用img
 if (!flux.browser.supportsTransitions)
 
-    window.f = new flux.slider('#space-slider', {
-        pagination: false,
-        controls: false,
-        transitions: ['zip'],
-        autoplay: true,
-    });
+        window.f = new flux.slider('#space-slider', {
+            pagination: false,
+            controls: false,
+            transitions: ['zip'],
+            autoplay: true,
+        });
 
 
 // <!-- swiper-food -->
@@ -188,10 +189,10 @@ var myswiper = new Swiper('section#food .swiper-container', {
 });
 
 // 燈箱效果 lightbox
-$(document).on("click", '[data-toggle="lightbox"]', function (event) {
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
-});
+  });
 
 
 
@@ -302,8 +303,4 @@ function slide() {
         }
     });
 }
-
-
-
-
 

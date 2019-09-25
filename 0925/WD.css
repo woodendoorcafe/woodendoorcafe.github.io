@@ -1,70 +1,15 @@
 /* 通用 */
+body {
+    overflow-x: hidden;
+    transition: 0.7s;
+}
+/* 配合開場動畫 */
 body.active{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
-body {
-    overflow-x: hidden;
-    transition: 0.7s;
-}
-/*開場動畫*/
-.animte{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #594841;
-    z-index: 99999999;
-    display: table;
-    text-align: center;
-    opacity: 0;
-    transition: 1s;
-}
 
-.animte.active{
-    opacity: 1;
-}
-
-
-.animte.hide{
-    display: none;
-    /* height:0; */
-}
-.hello {
-    color: #ffffc8;
-    letter-spacing: 2px;
-    font-size: 25px;
-    font-family: "roboto";
-    font-weight: 300;
-}
-
-#main-ctr {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.content {
-    border: 1px solid black;
-    display: inline-block;
-    position: relative;
-}
-svg {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
-}
-svg #smile-up,
-svg #circle,
-svg #eye-to-left,
-svg #eye-to-right,
-svg #wink,
-svg #bg {
-    visibility: hidden;
-}
-/* 開場動畫 */
 
 *:focus, *:hover {
     outline: none !important;
@@ -158,6 +103,62 @@ footer {
 .swiper-img {
     background-size: cover;
     background-position: center;
+}
+/*開場動畫*/
+.animte{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #594841;
+    z-index: 99999999;
+    display: table;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.animte.active{
+    opacity: 1;
+}
+
+
+.animte.hide{
+    display: none;
+    /* height:0; */
+}
+.hello {
+    color: #ffffc8;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: "roboto";
+    font-weight: 300;
+}
+
+#main-ctr {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+svg {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+svg #smile-up,
+svg #circle,
+svg #eye-to-left,
+svg #eye-to-right,
+svg #wink,
+svg #bg {
+    visibility: hidden;
 }
 
 /* NAV 導覽列 */

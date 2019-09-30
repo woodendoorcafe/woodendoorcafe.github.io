@@ -301,9 +301,8 @@ function slide() {
             $('#slide_xbox').width(objX + 'px');
         }
     });
-}
+};
 
 
-
-
-
+// aos 特效
+  AOS.init();

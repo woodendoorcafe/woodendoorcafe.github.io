@@ -144,10 +144,11 @@ footer .text-right{
     line-height: 17px; 
 }
 footer .pt{
-    font-size:14px;
+    font-size:15px;
     color: antiquewhite;
     line-height: 34px;
     margin-bottom: 7px;
+    letter-spacing: 2.5px;
 }
 footer .copy{
     font-size: 11px;
@@ -249,6 +250,7 @@ footer .copy{
         font-size:16px;
         padding-top:10px; 
         text-align: center;
+        letter-spacing: unset;
     }
     footer .text-right{
         font-size:14px;
